@@ -1,0 +1,105 @@
+Notebook[{Cell[
+CellGroupData[{Cell[
+BoxData[{RowBox[{RowBox[{RowBox[{"Euler","[",RowBox[
+{"a0_",",","b0_",",","h0_",",","f_",",","alpha_"}],"]"}],":=","\n","   ",RowBox[{"Module","[",RowBox[
+{RowBox[{"{",RowBox[{RowBox[{"a","=",RowBox[{"N","[","a0","]"}]}],",",RowBox[{"b","=",RowBox[
+{"N","[","b0","]"}]}],",",RowBox[{"h","=",RowBox[{"N","[","h0","]"}]}],",","n",",","x"}],"}"}],",","\n","\[NonBreakingSpace]\[NonBreakingSpace]\[NonBreakingSpace]",RowBox[
+{RowBox[{"n","=",RowBox[{RowBox[{"(",RowBox[{"b","-","a"}],")"}],"/","h"}]}],";","\n","\[NonBreakingSpace]\[NonBreakingSpace]\[NonBreakingSpace]",RowBox[
+{RowBox[{"y","[","0","]"}],"=","alpha"}],";","\n","\[NonBreakingSpace]\[NonBreakingSpace]\[NonBreakingSpace]",RowBox[
+{"For","[",RowBox[{RowBox[{"i","=","0"}],",",RowBox[{"i","\[LessEqual]","n"}],",",RowBox[
+{"i","++"}],",","\n","\[NonBreakingSpace]\[NonBreakingSpace]\[NonBreakingSpace]",RowBox[
+{RowBox[{RowBox[{"x","[","i","]"}],"=",RowBox[{"a","+",RowBox[{"h","*","i"}]}]}],";","\n","\[NonBreakingSpace]\[NonBreakingSpace]\[NonBreakingSpace]",RowBox[
+{RowBox[{"y","[",RowBox[{"i","+","1"}],"]"}],"=",RowBox[{RowBox[{"y","[","i","]"}],"+",RowBox[
+{"h","*",RowBox[{"f","[",RowBox[{RowBox[{"x","[","i","]"}],",",RowBox[{"y","[","i","]"}]}],"]"}]}]}]}],";","\n","\[NonBreakingSpace]\[NonBreakingSpace]\[NonBreakingSpace]",RowBox[
+{"Print","[",RowBox[{"\"Value at x[\"",",","i",",","\"]=\"",",",RowBox[{"x","[","i","]"}],",","\"is \"",",",RowBox[
+{"y","[","i","]"}]}],"]"}],";"}]}],"\n","\[NonBreakingSpace]\[NonBreakingSpace]\[NonBreakingSpace]","]"}],";"}]}],"\n","\[NonBreakingSpace]\[NonBreakingSpace]\[NonBreakingSpace]","]"}]}],";"}],"\n",RowBox[
+{"\[NonBreakingSpace]\[NonBreakingSpace]\[NonBreakingSpace]",RowBox[{RowBox[{RowBox[
+{"f","[",RowBox[{"x_",",","y_"}],"]"}],":=",RowBox[{RowBox[{"y","*",RowBox[{"x","^","3"}]}],"-",RowBox[
+{"1.5","*","y"}]}]}],";"}]}],"\n",RowBox[{"\[NonBreakingSpace]\[NonBreakingSpace]\[NonBreakingSpace]",RowBox[
+{"Euler","[",RowBox[{"0",",","2",",","0.5",",","f",",","1"}],"]"}]}]}],"Input",CellLabel -> "In[65]:= ",
+ExpressionUUID -> "db17c919-7738-4cee-8b59-86f65f8b887b"],Cell[
+BoxData[InterpretationBox[
+RowBox[{"\"Value at x[\"","\[InvisibleSpace]","0","\[InvisibleSpace]","\"]=\"","\[InvisibleSpace]","0.`","\[InvisibleSpace]","\"is \"","\[InvisibleSpace]","1"}],
+SequenceForm["Value at x[",0,"]=",0.`,"is ",1],Editable -> False],StandardForm],"Print",
+ExpressionUUID -> "8b7ea9bf-e907-4b06-aeb7-5c68ae12290c"],Cell[
+BoxData[InterpretationBox[
+RowBox[{"\"Value at x[\"","\[InvisibleSpace]","1","\[InvisibleSpace]","\"]=\"","\[InvisibleSpace]","0.5`","\[InvisibleSpace]","\"is \"","\[InvisibleSpace]","0.25`"}],
+SequenceForm["Value at x[",1,"]=",0.5`,"is ",0.25`],Editable -> False],StandardForm],
+"Print",ExpressionUUID -> "68005207-0548-459f-816f-b77a41fa8c83"],Cell[
+BoxData[InterpretationBox[
+RowBox[{"\"Value at x[\"","\[InvisibleSpace]","2","\[InvisibleSpace]","\"]=\"","\[InvisibleSpace]","1.`","\[InvisibleSpace]","\"is \"","\[InvisibleSpace]","0.078125`"}],
+SequenceForm["Value at x[",2,"]=",1.`,"is ",0.078125`],Editable -> False],StandardForm],
+"Print",ExpressionUUID -> "0a3bd19b-e553-4094-9bcd-7023bfc3468f"],Cell[
+BoxData[InterpretationBox[
+RowBox[{"\"Value at x[\"","\[InvisibleSpace]","3","\[InvisibleSpace]","\"]=\"","\[InvisibleSpace]","1.5`","\[InvisibleSpace]","\"is \"","\[InvisibleSpace]","0.05859375`"}],
+SequenceForm["Value at x[",3,"]=",1.5`,"is ",0.05859375`],Editable -> False],StandardForm],
+"Print",ExpressionUUID -> "f929e4c2-9a94-4e41-8d40-1ee5e9acdbac"],Cell[
+BoxData[InterpretationBox[
+RowBox[{"\"Value at x[\"","\[InvisibleSpace]","4","\[InvisibleSpace]","\"]=\"","\[InvisibleSpace]","2.`","\[InvisibleSpace]","\"is \"","\[InvisibleSpace]","0.113525390625`"}],
+SequenceForm["Value at x[",4,"]=",2.`,"is ",0.113525390625`],Editable -> False],StandardForm],
+"Print",ExpressionUUID -> "b667596f-2fd1-4f05-9a87-550bcd5e25d1"]},Open],ExpressionUUID -> "ce4bf10c-a102-4a52-8948-3659921c57a0"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{"\[NonBreakingSpace]\[NonBreakingSpace]\[NonBreakingSpace]",RowBox[
+{RowBox[{RowBox[{"f","[",RowBox[{"x_",",","y_"}],"]"}],":=",RowBox[{RowBox[{"x","^","2"}],"+",RowBox[
+{"y","^","2"}]}]}],";"}]}],"\n",RowBox[{"\[NonBreakingSpace]\[NonBreakingSpace]\[NonBreakingSpace]",RowBox[
+{"Euler","[",RowBox[{"0",",","0.3",",","0.1",",","f",",","1"}],"]"}]}]}],"Input",
+CellLabel -> "In[68]:= ",ExpressionUUID -> "2e3e3596-4d0b-4cba-b984-652c31467650"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at x[\"","\[InvisibleSpace]","0","\[InvisibleSpace]","\"]=\"","\[InvisibleSpace]","0.`","\[InvisibleSpace]","\"is \"","\[InvisibleSpace]","1"}],
+SequenceForm["Value at x[",0,"]=",0.`,"is ",1],Editable -> False],StandardForm],"Print",
+ExpressionUUID -> "6f6b4131-44b7-4770-8ce2-2bade0bc448a"],Cell[
+BoxData[InterpretationBox[
+RowBox[{"\"Value at x[\"","\[InvisibleSpace]","1","\[InvisibleSpace]","\"]=\"","\[InvisibleSpace]","0.1`","\[InvisibleSpace]","\"is \"","\[InvisibleSpace]","1.1`"}],
+SequenceForm["Value at x[",1,"]=",0.1`,"is ",1.1`],Editable -> False],StandardForm],
+"Print",ExpressionUUID -> "60993a27-9174-4ed3-9421-f433f47b3205"],Cell[
+BoxData[InterpretationBox[
+RowBox[{"\"Value at x[\"","\[InvisibleSpace]","2","\[InvisibleSpace]","\"]=\"","\[InvisibleSpace]","0.2`","\[InvisibleSpace]","\"is \"","\[InvisibleSpace]","1.2220000000000002`"}],
+SequenceForm["Value at x[",2,"]=",0.2`,"is ",1.2220000000000002`],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "b38b9ac4-3bf5-49a4-8811-f0131ec69cad"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at x[\"","\[InvisibleSpace]","3","\[InvisibleSpace]","\"]=\"","\[InvisibleSpace]","0.30000000000000004`","\[InvisibleSpace]","\"is \"","\[InvisibleSpace]","1.3753284000000003`"}],
+SequenceForm["Value at x[",3,"]=",0.30000000000000004`,"is ",1.3753284000000003`],
+Editable -> False],StandardForm],"Print",ExpressionUUID -> "7d943a1a-7a14-4fa6-8592-03eb42da6f94"]},
+Open],ExpressionUUID -> "b1cb79ca-e381-4790-94db-e309eb8ad6e5"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{"\[NonBreakingSpace]\[NonBreakingSpace]\[NonBreakingSpace]",RowBox[
+{RowBox[{RowBox[{"f","[",RowBox[{"x_",",","y_"}],"]"}],":=",RowBox[{RowBox[{"3","*","x"}],"+",RowBox[
+{"2","*","y"}]}]}],";"}]}],"\n",RowBox[{"\[NonBreakingSpace]\[NonBreakingSpace]\[NonBreakingSpace]",RowBox[
+{"Euler","[",RowBox[{"0",",","0.3",",","0.1",",","f",",","1"}],"]"}]}]}],"Input",
+CellLabel -> "In[70]:= ",ExpressionUUID -> "a5306de4-d712-4d6a-9638-78fd29b453f5"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at x[\"","\[InvisibleSpace]","0","\[InvisibleSpace]","\"]=\"","\[InvisibleSpace]","0.`","\[InvisibleSpace]","\"is \"","\[InvisibleSpace]","1"}],
+SequenceForm["Value at x[",0,"]=",0.`,"is ",1],Editable -> False],StandardForm],"Print",
+ExpressionUUID -> "96a0503e-4826-481d-8ee2-ced617a72f64"],Cell[
+BoxData[InterpretationBox[
+RowBox[{"\"Value at x[\"","\[InvisibleSpace]","1","\[InvisibleSpace]","\"]=\"","\[InvisibleSpace]","0.1`","\[InvisibleSpace]","\"is \"","\[InvisibleSpace]","1.2`"}],
+SequenceForm["Value at x[",1,"]=",0.1`,"is ",1.2`],Editable -> False],StandardForm],
+"Print",ExpressionUUID -> "01d7a81e-15b2-4610-873a-dcbded23bcf9"],Cell[
+BoxData[InterpretationBox[
+RowBox[{"\"Value at x[\"","\[InvisibleSpace]","2","\[InvisibleSpace]","\"]=\"","\[InvisibleSpace]","0.2`","\[InvisibleSpace]","\"is \"","\[InvisibleSpace]","1.47`"}],
+SequenceForm["Value at x[",2,"]=",0.2`,"is ",1.47`],Editable -> False],StandardForm],
+"Print",ExpressionUUID -> "96bc033c-7e13-4507-af5c-ee94db21b8d2"],Cell[
+BoxData[InterpretationBox[
+RowBox[{"\"Value at x[\"","\[InvisibleSpace]","3","\[InvisibleSpace]","\"]=\"","\[InvisibleSpace]","0.30000000000000004`","\[InvisibleSpace]","\"is \"","\[InvisibleSpace]","1.824`"}],
+SequenceForm["Value at x[",3,"]=",0.30000000000000004`,"is ",1.824`],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "8049790a-38fa-4bf1-9d23-ec401504d52e"]},
+Open],ExpressionUUID -> "b6c906fe-a367-4039-8719-cd6676d40a95"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{"\[NonBreakingSpace]\[NonBreakingSpace]\[NonBreakingSpace]",RowBox[
+{RowBox[{RowBox[{"f","[",RowBox[{"x_",",","y_"}],"]"}],":=",RowBox[{"Log","[",RowBox[
+{"x","+","y"}],"]"}]}],";"}]}],"\n",RowBox[{"\[NonBreakingSpace]\[NonBreakingSpace]\[NonBreakingSpace]",RowBox[
+{"Euler","[",RowBox[{"1.2",",","1.4",",","0.2",",","f",",","2"}],"]"}]}]}],"Input",
+CellLabel -> "In[74]:= ",ExpressionUUID -> "14a4d0f4-5d71-42e8-96b3-538328b1a36d"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at x[\"","\[InvisibleSpace]","0","\[InvisibleSpace]","\"]=\"","\[InvisibleSpace]","1.2`","\[InvisibleSpace]","\"is \"","\[InvisibleSpace]","2"}],
+SequenceForm["Value at x[",0,"]=",1.2`,"is ",2],Editable -> False],StandardForm],
+"Print",ExpressionUUID -> "03f69d11-2834-488f-87e7-4a4bfb50ea35"],Cell[
+BoxData[InterpretationBox[
+RowBox[{"\"Value at x[\"","\[InvisibleSpace]","1","\[InvisibleSpace]","\"]=\"","\[InvisibleSpace]","1.4`","\[InvisibleSpace]","\"is \"","\[InvisibleSpace]","2.2326301619611364`"}],
+SequenceForm["Value at x[",1,"]=",1.4`,"is ",2.2326301619611364`],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "1706fa00-e76a-4a4e-93fd-8090a6625e32"]},
+Open],ExpressionUUID -> "81da664a-8a82-4ef2-8727-5db105d96f4d"]},StyleDefinitions -> "Default.nb",
+FrontEndVersion -> "13. for Wolfram Cloud 1.61.2.3 (February 12, 2022)"]

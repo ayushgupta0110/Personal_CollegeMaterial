@@ -1,0 +1,64 @@
+Notebook[{Cell[
+CellGroupData[{Cell[
+BoxData[{RowBox[{RowBox[{RowBox[{"Trapezoidal","[",RowBox[
+{"a0_",",","b0_"}],"]"}],":=","\n","  ",RowBox[{"Module","[",RowBox[{RowBox[{"{","}"}],",","\n","\[NonBreakingSpace]\[NonBreakingSpace]",RowBox[
+{RowBox[{"a","=","a0"}],";","\n","\[NonBreakingSpace]\[NonBreakingSpace]",RowBox[
+{"b","=","b0"}],";","\n","\[NonBreakingSpace]\[NonBreakingSpace]",RowBox[{"h","=",RowBox[
+{"(",RowBox[{"b","-","a"}],")"}]}],";","\n","\[NonBreakingSpace]\[NonBreakingSpace]",RowBox[
+{"TI"," ","="," ",RowBox[{RowBox[{"(",RowBox[{"h","/","2"}],")"}],"*",RowBox[{"(",RowBox[
+{RowBox[{"f","[","a","]"}],"+",RowBox[{"f","[","b","]"}]}],")"}]}]}],";","\n","\[NonBreakingSpace]\[NonBreakingSpace]",RowBox[
+{"Print","[",RowBox[{"\"Integration by Trapezoidal Rule is : \"",","," ",RowBox[{"N","[","TI","]"}]}],"]"}],";","\n","\[NonBreakingSpace]\[NonBreakingSpace]",RowBox[
+{"DI"," ","="," ",RowBox[{"Integrate","[",RowBox[{RowBox[{"f","[","x","]"}],",",RowBox[
+{"{",RowBox[{"x",",","a",",","b"}],"}"}]}],"]"}]}],";","\n","\[NonBreakingSpace]\[NonBreakingSpace]",RowBox[
+{"Print","[",RowBox[{"\"Integration by Direct : \"",",",RowBox[{"N","[","DI","]"}]}],"]"}],";","\n","\[NonBreakingSpace]\[NonBreakingSpace]",RowBox[
+{"Print","[",RowBox[{"\"Error : \"",","," ",RowBox[{"N","[",RowBox[{"TI","-","DI"}],"]"}]}],"]"}],";"}]}],"\n","\[NonBreakingSpace]","]"}]}],";"}],"\n",RowBox[
+{RowBox[{RowBox[{"f","[","x_","]"}],":="," ",RowBox[{"1","/",RowBox[{"(",RowBox[{"1","+",RowBox[
+{"x","^","2"}]}],")"}]}]}],";"}],"\n",RowBox[{RowBox[{"Trapezoidal","[",RowBox[{"0",",","5"}],"]"}],";"}]}],
+"Input",CellLabel -> "In[43]:= ",ExpressionUUID -> "636579ca-2e2a-4e24-bee8-94a36710c370"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Integration by Trapezoidal Rule is : \"","\[InvisibleSpace]","2.5961538461538463`"}],
+SequenceForm["Integration by Trapezoidal Rule is : ",2.5961538461538463`],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "1e712587-0053-401b-ad32-eebf8dc1aa0c"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Integration by Direct : \"","\[InvisibleSpace]","1.373400766945016`"}],
+SequenceForm["Integration by Direct : ",1.373400766945016`],Editable -> False],StandardForm],
+"Print",ExpressionUUID -> "cf24e965-c98f-4e4c-816f-cfd10a475e89"],Cell[
+BoxData[InterpretationBox[
+RowBox[{"\"Error : \"","\[InvisibleSpace]","1.2227530792088304`"}],SequenceForm["Error : ",
+1.2227530792088304`],Editable -> False],StandardForm],"Print",ExpressionUUID -> "a5291ac6-e8b3-4b75-bd93-95277104d545"]},
+Open],ExpressionUUID -> "65569058-bf42-4795-92bb-0671ca37b065"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{RowBox[{RowBox[{"f","[","x_","]"}],":="," ",RowBox[{"1","/",RowBox[
+{"(",RowBox[{"1","+","x"}],")"}]}]}],";"}],"\n",RowBox[{RowBox[{"Trapezoidal","[",RowBox[
+{"0",",","1"}],"]"}],";"}]}],"Input",CellLabel -> "In[46]:= ",ExpressionUUID -> "d1bc06d4-8f2a-4e18-a624-779329af6828"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Integration by Trapezoidal Rule is : \"","\[InvisibleSpace]","0.75`"}],
+SequenceForm["Integration by Trapezoidal Rule is : ",0.75`],Editable -> False],StandardForm],
+"Print",ExpressionUUID -> "69318eeb-ebd7-4ebe-a737-47ea8f2d2257"],Cell[
+BoxData[InterpretationBox[
+RowBox[{"\"Integration by Direct : \"","\[InvisibleSpace]","0.6931471805599453`"}],
+SequenceForm["Integration by Direct : ",0.6931471805599453`],Editable -> False],StandardForm],
+"Print",ExpressionUUID -> "05683e3d-e171-4909-b5ab-8c0d1e63b071"],Cell[
+BoxData[InterpretationBox[
+RowBox[{"\"Error : \"","\[InvisibleSpace]","0.056852819440054714`"}],SequenceForm[
+"Error : ",0.056852819440054714`],Editable -> False],StandardForm],"Print",ExpressionUUID -> "205126aa-ef7c-4534-b491-5ab10670d8bd"]},
+Open],ExpressionUUID -> "f101a130-1cc2-4cd2-8c6e-cb17f2537a6a"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{RowBox[{RowBox[{"f","[","x_","]"}],":=",RowBox[{"2","^","x"}]}],";"}],"\n",RowBox[
+{RowBox[{"Trapezoidal","[",RowBox[{"0",",","4"}],"]"}],";"}]}],"Input",CellLabel -> "In[48]:= ",
+ExpressionUUID -> "8f083534-87cb-4648-bc8b-dd7184829451"],Cell[
+BoxData[InterpretationBox[
+RowBox[{"\"Integration by Trapezoidal Rule is : \"","\[InvisibleSpace]","34.`"}],
+SequenceForm["Integration by Trapezoidal Rule is : ",34.`],Editable -> False],StandardForm],
+"Print",ExpressionUUID -> "f5706b37-0768-4377-ac26-a57508897802"],Cell[
+BoxData[InterpretationBox[
+RowBox[{"\"Integration by Direct : \"","\[InvisibleSpace]","21.64042561333445`"}],
+SequenceForm["Integration by Direct : ",21.64042561333445`],Editable -> False],StandardForm],
+"Print",ExpressionUUID -> "e23bf08b-065c-4c45-b63f-93a094945e30"],Cell[
+BoxData[InterpretationBox[
+RowBox[{"\"Error : \"","\[InvisibleSpace]","12.35957438666555`"}],SequenceForm["Error : ",
+12.35957438666555`],Editable -> False],StandardForm],"Print",ExpressionUUID -> "d90a6b91-d7fb-417d-a647-6aebad751cb2"]},
+Open],ExpressionUUID -> "b60fbd7d-e76e-47bc-bf77-d22e3722e650"]},StyleDefinitions -> "Default.nb",
+FrontEndVersion -> "13. for Wolfram Cloud 1.61.2.3 (February 12, 2022)"]

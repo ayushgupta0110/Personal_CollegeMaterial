@@ -1,0 +1,83 @@
+Notebook[{Cell[
+CellGroupData[{Cell[
+BoxData[{RowBox[{RowBox[{RowBox[{"Simpson","[",RowBox[
+{"a0_",",","b0_"}],"]"}],":=","\n","  ",RowBox[{"Module","[",RowBox[{RowBox[{"{","}"}],",","\n","\[NonBreakingSpace]\[NonBreakingSpace]",RowBox[
+{RowBox[{"a","=","a0"}],";","\n","\[NonBreakingSpace]\[NonBreakingSpace]",RowBox[
+{"b","=","b0"}],";","\n","\[NonBreakingSpace]\[NonBreakingSpace]",RowBox[{"h","=",RowBox[
+{RowBox[{"(",RowBox[{"b","-","a"}],")"}],"/","2"}]}],";","\n","\[NonBreakingSpace]\[NonBreakingSpace]",RowBox[
+{"SI"," ","="," ",RowBox[{RowBox[{"(",RowBox[{"h","/","3"}],")"}],"*",RowBox[{"(",RowBox[
+{RowBox[{"f","[","a","]"}],"+",RowBox[{"4","*",RowBox[{"f","[",RowBox[{"a","+","h"}],"]"}]}],"+",RowBox[
+{"f","[",RowBox[{"a","+",RowBox[{"2","*","h"}]}],"]"}]}],")"}]}]}],";","\n","\[NonBreakingSpace]\[NonBreakingSpace]",RowBox[
+{"Print","[",RowBox[{"\"Integration by Trapezoidal Rule is : \"",","," ",RowBox[{"N","[","SI","]"}]}],"]"}],";","\n","\[NonBreakingSpace]\[NonBreakingSpace]",RowBox[
+{"DI"," ","="," ",RowBox[{"Integrate","[",RowBox[{RowBox[{"f","[","x","]"}],",",RowBox[
+{"{",RowBox[{"x",",","a",",","b"}],"}"}]}],"]"}]}],";","\n","\[NonBreakingSpace]\[NonBreakingSpace]",RowBox[
+{"Print","[",RowBox[{"\"Integration by Direct : \"",",",RowBox[{"N","[","DI","]"}]}],"]"}],";","\n","\[NonBreakingSpace]\[NonBreakingSpace]",RowBox[
+{"Print","[",RowBox[{"\"Error : \"",","," ",RowBox[{"N","[",RowBox[{"SI","-","DI"}],"]"}]}],"]"}],";"}]}],"\n","\[NonBreakingSpace]","]"}]}],";"}],"\n",RowBox[
+{RowBox[{RowBox[{"f","[","x_","]"}],":=",RowBox[{RowBox[{"x","^","5"}],"+",RowBox[
+{"2","*",RowBox[{"x","^","4"}]}],"+","x","+","1"}]}],";"}],"\n",RowBox[{RowBox[{"Simpson","[",RowBox[
+{"1",",","2"}],"]"}],";"}]}],"Input",CellLabel -> "In[35]:= ",ExpressionUUID -> "aaea1ea9-c22b-41cb-92df-b13fd78129c2"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Integration by Trapezoidal Rule is : \"","\[InvisibleSpace]","25.479166666666668`"}],
+SequenceForm["Integration by Trapezoidal Rule is : ",25.479166666666668`],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "1662489b-8ef2-4ec2-8be7-8c97b70e88b7"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Integration by Direct : \"","\[InvisibleSpace]","25.4`"}],
+SequenceForm["Integration by Direct : ",25.4`],Editable -> False],StandardForm],"Print",
+ExpressionUUID -> "7a8935a2-e8e1-41b9-8438-6384bd3b4e52"],Cell[
+BoxData[InterpretationBox[
+RowBox[{"\"Error : \"","\[InvisibleSpace]","0.07916666666666666`"}],SequenceForm[
+"Error : ",0.07916666666666666`],Editable -> False],StandardForm],"Print",ExpressionUUID -> "89d959a0-a216-4075-9eb1-3d8ffe4393eb"]},
+Open],ExpressionUUID -> "f9749b75-3225-4b6f-a8d1-602b6e857bde"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{RowBox[{RowBox[{"f","[","x_","]"}],":="," ",RowBox[{"1","/",RowBox[
+{"(",RowBox[{"1","+",RowBox[{"x","^","2"}]}],")"}]}]}],";"}],"\n",RowBox[{RowBox[
+{"Simpson","[",RowBox[{"0",",","5"}],"]"}],";"}]}],"Input",CellLabel -> "In[38]:= ",
+ExpressionUUID -> "e9377d51-d3b3-449b-900c-4b5dcd864a6d"],Cell[
+BoxData[InterpretationBox[
+RowBox[{"\"Integration by Trapezoidal Rule is : \"","\[InvisibleSpace]","1.325154730327144`"}],
+SequenceForm["Integration by Trapezoidal Rule is : ",1.325154730327144`],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "99f6300f-9c21-4e0a-ac32-b9951cfc58ff"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Integration by Direct : \"","\[InvisibleSpace]","1.373400766945016`"}],
+SequenceForm["Integration by Direct : ",1.373400766945016`],Editable -> False],StandardForm],
+"Print",ExpressionUUID -> "7b58de99-d0a6-41e7-a798-83636f44b079"],Cell[
+BoxData[InterpretationBox[
+RowBox[{"\"Error : \"","\[InvisibleSpace]",RowBox[{"-","0.04824603661787186`"}]}],
+SequenceForm["Error : ",-0.04824603661787186`],Editable -> False],StandardForm],"Print",
+ExpressionUUID -> "225af0e2-8ced-4936-9eb3-36d95d0d1b49"]},Open],ExpressionUUID -> "3c1db039-991d-4444-a5bb-8a4a3fb8fb0c"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{RowBox[{RowBox[{"f","[","x_","]"}],":="," ",RowBox[{"1","/",RowBox[
+{"(",RowBox[{"1","+","x"}],")"}]}]}],";"}],"\n",RowBox[{RowBox[{"Simpson","[",RowBox[
+{"0",",","1"}],"]"}],";"}]}],"Input",CellLabel -> "In[24]:= ",ExpressionUUID -> "f942f2fd-d227-4075-ad2a-00a10a7e4d6f"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Integration by Trapezoidal Rule is : \"","\[InvisibleSpace]","0.6944444444444444`"}],
+SequenceForm["Integration by Trapezoidal Rule is : ",0.6944444444444444`],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "dc4ff1c6-b5c5-4212-a515-2d13afe4244c"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Integration by Direct : \"","\[InvisibleSpace]","0.6931471805599453`"}],
+SequenceForm["Integration by Direct : ",0.6931471805599453`],Editable -> False],StandardForm],
+"Print",ExpressionUUID -> "dbc2582b-b32f-45ab-af7e-19cda4c85152"],Cell[
+BoxData[InterpretationBox[
+RowBox[{"\"Error : \"","\[InvisibleSpace]","0.0012972638844991335`"}],SequenceForm[
+"Error : ",0.0012972638844991335`],Editable -> False],StandardForm],"Print",ExpressionUUID -> "a36b3a4e-a4e1-4d19-a523-890e09ae37f4"]},
+Open],ExpressionUUID -> "97f47c1b-ac17-43b2-afac-b43f4886d801"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{RowBox[{RowBox[{"f","[","x_","]"}],":=",RowBox[{"2","^","x"}]}],";"}],"\n",RowBox[
+{RowBox[{"Simpson","[",RowBox[{"0",",","4"}],"]"}],";"}]}],"Input",CellLabel -> "In[28]:= ",
+ExpressionUUID -> "31ae7014-650d-44a6-971a-497f8b929506"],Cell[
+BoxData[InterpretationBox[
+RowBox[{"\"Integration by Trapezoidal Rule is : \"","\[InvisibleSpace]","22.`"}],
+SequenceForm["Integration by Trapezoidal Rule is : ",22.`],Editable -> False],StandardForm],
+"Print",ExpressionUUID -> "a35bc0a5-8bb3-4200-907d-84c4e89feb9f"],Cell[
+BoxData[InterpretationBox[
+RowBox[{"\"Integration by Direct : \"","\[InvisibleSpace]","21.64042561333445`"}],
+SequenceForm["Integration by Direct : ",21.64042561333445`],Editable -> False],StandardForm],
+"Print",ExpressionUUID -> "c3a2b37b-b780-44f6-84f9-a74b9180a5b8"],Cell[
+BoxData[InterpretationBox[
+RowBox[{"\"Error : \"","\[InvisibleSpace]","0.35957438666554964`"}],SequenceForm[
+"Error : ",0.35957438666554964`],Editable -> False],StandardForm],"Print",ExpressionUUID -> "5cb8752a-3255-4d7d-a722-f85b16612eaa"]},
+Open],ExpressionUUID -> "136a3f55-ea78-4609-a1ff-f1691c1ad8a4"]},StyleDefinitions -> "Default.nb",
+FrontEndVersion -> "13. for Wolfram Cloud 1.61.2.3 (February 12, 2022)"]

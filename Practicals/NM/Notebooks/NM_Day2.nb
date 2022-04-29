@@ -1,0 +1,367 @@
+Notebook[{Cell[
+CellGroupData[{Cell[
+BoxData[{RowBox[{RowBox[{"ClearAll",";"}]," "}],"\n",RowBox[
+{RowBox[{RowBox[{RowBox[{"Newtonraphson","[",RowBox[{"x0_",","," ","max_"}],"]"}]," ",":="," ","\n",RowBox[
+{"Module","[",RowBox[{RowBox[{"{",RowBox[{"p0"," ","="," ",RowBox[{"N","[","x0","]"}]}],"}"}],","," ","\n",RowBox[
+{RowBox[{"p1"," ","="," ",RowBox[{"p0"," ","-"," ",RowBox[{"(",RowBox[{RowBox[{"f","[","p0","]"}]," ","/"," ",RowBox[
+{RowBox[{"f","'"}],"[","p0","]"}]}],")"}]}]}],";","\n",RowBox[{"k"," ","="," ","0"}],";"," ","\n",RowBox[
+{"While","[",RowBox[{RowBox[{"k"," ","<"," ","max"}],",","\n",RowBox[{RowBox[{"p1"," ","="," ",RowBox[
+{"p0"," ","-"," ",RowBox[{"(",RowBox[{RowBox[{"f","[","p0","]"}]," ","/"," ",RowBox[
+{RowBox[{"f","'"}],"[","p0","]"}]}],")"}]}]}],";","\n",RowBox[{"p0"," ","="," ","p1"}],";","\n",RowBox[
+{"k"," ","="," ",RowBox[{"k"," ","+"," ","1"}]}],";"," ","\n",RowBox[{"Print","[",RowBox[
+{"\"Value at \"",","," ","k",","," ","\"th iteration is: \"",","," ",RowBox[{"NumberForm","[",RowBox[
+{"p1",","," ","16"}],"]"}]}],"]"}],";"}]}],"]"}],";"}]}]," ","\n","]"}]}],";"}]," "}],"\n",RowBox[
+{RowBox[{"Newtonraphson","[",RowBox[{"1",","," ","10"}],"]"}]," "}],"\n",RowBox[{RowBox[
+{"f","[","x_","]"}]," ","="," ",RowBox[{RowBox[{"(",RowBox[{"x","^","3"}],")"}]," ","+"," ",RowBox[
+{"(",RowBox[{"4"," ","*"," ",RowBox[{"(",RowBox[{"x","^","2"}],")"}]}],")"}]," ","-"," ","10"}]}]}],
+"Input",CellLabel -> "In[5]:= ",ExpressionUUID -> "bea4c505-5b75-4eb5-97f0-744f330c381b"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","1","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"1.454545454545455\"",ShowStringCharacters -> False],
+1.4545454545454546`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",1,"th iteration is: ",NumberForm[1.4545454545454546`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "c847bd18-a6af-4e96-87f6-4d5da6d47b83"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","2","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"1.368900401069519\"",ShowStringCharacters -> False],
+1.3689004010695187`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",2,"th iteration is: ",NumberForm[1.3689004010695187`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "2457176f-6364-4f76-8c5b-91996f17baf9"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","3","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"1.365236600202116\"",ShowStringCharacters -> False],
+1.365236600202116`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",3,"th iteration is: ",NumberForm[1.365236600202116`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "8d97dade-7373-45a6-8042-1ecdc3873bbb"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","4","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"1.365230013435367\"",ShowStringCharacters -> False],
+1.3652300134353665`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",4,"th iteration is: ",NumberForm[1.3652300134353665`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "2c11967b-0910-4311-b6a5-7a6fcdf60b66"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","5","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"1.365230013414097\"",ShowStringCharacters -> False],
+1.3652300134140969`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",5,"th iteration is: ",NumberForm[1.3652300134140969`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "4ef98642-a2bb-4061-abde-646979ef06b9"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","6","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"1.365230013414097\"",ShowStringCharacters -> False],
+1.3652300134140969`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",6,"th iteration is: ",NumberForm[1.3652300134140969`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "7d4b133e-99c4-4b06-8b9c-0dec722cf4f7"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","7","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"1.365230013414097\"",ShowStringCharacters -> False],
+1.3652300134140969`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",7,"th iteration is: ",NumberForm[1.3652300134140969`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "3e45cb69-13d2-4ae9-b137-898b38ef51b4"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","8","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"1.365230013414097\"",ShowStringCharacters -> False],
+1.3652300134140969`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",8,"th iteration is: ",NumberForm[1.3652300134140969`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "01bd45a9-b5e4-407c-9c70-e540f972452f"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","9","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"1.365230013414097\"",ShowStringCharacters -> False],
+1.3652300134140969`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",9,"th iteration is: ",NumberForm[1.3652300134140969`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "2fae8c2f-384c-445c-8d8c-5d17d818935c"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","10","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"1.365230013414097\"",ShowStringCharacters -> False],
+1.3652300134140969`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",10,"th iteration is: ",NumberForm[1.3652300134140969`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "427fe5c6-b200-4948-a7bb-e822b6aaa0b6"],Cell[
+BoxData[
+RowBox[{RowBox[{"-","10"}],"+",RowBox[{"4"," ",SuperscriptBox["x","2"]}],"+",SuperscriptBox[
+"x","3"]}],StandardForm],"Output",CellLabel -> "Out[8]= ",ExpressionUUID -> "21e5caa8-1f52-43b8-a1d9-b21070c12176"]},
+Open],ExpressionUUID -> "e4ab9fe8-8451-498e-8a87-c230bda417ee"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{RowBox[{"Newtonraphson","[",RowBox[{"0.5",","," ","10"}],"]"}]," "}],"\n",RowBox[
+{RowBox[{"f","[","x_","]"}]," ","="," ",RowBox[{RowBox[{"Exp","[",RowBox[{"-","x"}],"]"}]," ","-"," ","x"}]}]}],
+"Input",CellLabel -> "In[9]:= ",ExpressionUUID -> "cf14b8b5-6e4b-4262-99e0-9909e5446f76"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","1","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"2.368421052631579\"",ShowStringCharacters -> False],
+2.3684210526315788`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",1,"th iteration is: ",NumberForm[2.3684210526315788`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "057387c7-2af8-44bf-84b3-ae9e518aeaec"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","2","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"1.649408073028098\"",ShowStringCharacters -> False],
+1.6494080730280984`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",2,"th iteration is: ",NumberForm[1.6494080730280984`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "a6651a14-8596-42fb-bad7-1d1c3dccceef"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","3","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"1.397991493906514\"",ShowStringCharacters -> False],
+1.3979914939065141`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",3,"th iteration is: ",NumberForm[1.3979914939065141`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "26aff3cb-07dc-4f31-b3dc-ef7257f36511"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","4","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"1.365743858184125\"",ShowStringCharacters -> False],
+1.3657438581841255`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",4,"th iteration is: ",NumberForm[1.3657438581841255`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "8e2585aa-2570-427b-898e-31a643c13a27"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","5","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"1.365230142809137\"",ShowStringCharacters -> False],
+1.365230142809137`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",5,"th iteration is: ",NumberForm[1.365230142809137`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "607b97b5-4c97-4d02-8357-71fc7f55b267"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","6","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"1.365230013414105\"",ShowStringCharacters -> False],
+1.365230013414105`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",6,"th iteration is: ",NumberForm[1.365230013414105`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "0266ff2b-d7ce-438b-9390-4861709a50e9"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","7","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"1.365230013414097\"",ShowStringCharacters -> False],
+1.3652300134140969`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",7,"th iteration is: ",NumberForm[1.3652300134140969`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "7651f026-bee4-4528-9186-160f12a66635"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","8","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"1.365230013414097\"",ShowStringCharacters -> False],
+1.3652300134140969`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",8,"th iteration is: ",NumberForm[1.3652300134140969`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "e5c94333-dd1d-4d31-b0e9-27b3fc60db65"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","9","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"1.365230013414097\"",ShowStringCharacters -> False],
+1.3652300134140969`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",9,"th iteration is: ",NumberForm[1.3652300134140969`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "8ea720bb-61db-49c2-a676-2d60673d0273"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","10","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"1.365230013414097\"",ShowStringCharacters -> False],
+1.3652300134140969`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",10,"th iteration is: ",NumberForm[1.3652300134140969`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "48dc2431-3348-4a6f-9ba0-edee9e464959"],Cell[
+BoxData[
+RowBox[{SuperscriptBox["\[ExponentialE]",RowBox[{"-","x"}]],"-","x"}],StandardForm],
+"Output",CellLabel -> "Out[10]= ",ExpressionUUID -> "ecaca677-3820-4a65-b35d-0ddfa9fac62a"]},
+Open],ExpressionUUID -> "e2bd7b50-24d4-449e-ba6f-0e8f45029885"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{RowBox[{"Newtonraphson","[",RowBox[{"0.1",","," ","10"}],"]"}]," "}],"\n",RowBox[
+{RowBox[{"f","[","x_","]"}]," ","="," ",RowBox[{RowBox[{"Cos","[","x","]"}]," ","-"," ","x"}]}]}],
+"Input",CellLabel -> "In[21]:= ",ExpressionUUID -> "90f5efec-5474-40f7-af6b-58ba1a19ac4f"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","1","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"12.09879518072289\"",ShowStringCharacters -> False],
+12.098795180722892`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",1,"th iteration is: ",NumberForm[12.098795180722892`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "5e6748dd-d8fe-4c72-8537-1d33fdb06c77"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","2","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"7.720345458603296\"",ShowStringCharacters -> False],
+7.720345458603296`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",2,"th iteration is: ",NumberForm[7.720345458603296`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "b8165f60-fe02-471d-820f-d3bc556d7743"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","3","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"4.858122394736339\"",ShowStringCharacters -> False],
+4.8581223947363394`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",3,"th iteration is: ",NumberForm[4.8581223947363394`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "d7558db1-f444-4c30-8b0a-b5abc54d6c0d"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","4","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"3.042991364235539\"",ShowStringCharacters -> False],
+3.0429913642355393`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",4,"th iteration is: ",NumberForm[3.0429913642355393`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "18d3b1f7-1f9b-40a8-8d92-db575dc19106"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","5","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"1.983644681702598\"",ShowStringCharacters -> False],
+1.9836446817025977`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",5,"th iteration is: ",NumberForm[1.9836446817025977`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "ed8e5c0d-c9d4-4767-913b-091b21d5e35e"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","6","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"1.494200784628973\"",ShowStringCharacters -> False],
+1.4942007846289727`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",6,"th iteration is: ",NumberForm[1.4942007846289727`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "e1adec64-7dad-478e-bacb-4180025d2b6c"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","7","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"1.372679799722194\"",ShowStringCharacters -> False],
+1.372679799722194`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",7,"th iteration is: ",NumberForm[1.372679799722194`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "1096b402-8b48-49c4-9419-8416428b5981"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","8","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"1.365257074078494\"",ShowStringCharacters -> False],
+1.3652570740784944`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",8,"th iteration is: ",NumberForm[1.3652570740784944`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "b75a3f34-7c46-4948-97d9-d6c4aaa356f1"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","9","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"1.36523001377309\"",ShowStringCharacters -> False],
+1.3652300137730895`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",9,"th iteration is: ",NumberForm[1.3652300137730895`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "115a0b34-bd45-428b-9607-d40497dcfc59"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","10","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"1.365230013414097\"",ShowStringCharacters -> False],
+1.3652300134140969`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",10,"th iteration is: ",NumberForm[1.3652300134140969`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "b940cd21-7631-4d1a-a3ce-86eb49bbc3db"],Cell[
+BoxData[
+RowBox[{RowBox[{"-","x"}],"+",RowBox[{"Cos","[","x","]"}]}],StandardForm],"Output",
+CellLabel -> "Out[22]= ",ExpressionUUID -> "ed08ddeb-22e4-4e9a-9d60-37cb16af11bd"]},
+Open],ExpressionUUID -> "cddf247a-c9a0-4318-a8fb-c3cca46f86d9"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{RowBox[{"Newtonraphson","[",RowBox[{"2",","," ","10"}],"]"}]," "}],"\n",RowBox[
+{RowBox[{"f","[","x_","]"}]," ","="," ",RowBox[{RowBox[{"(",RowBox[{"x","^","3"}],")"}]," ","-"," ","13"}]}]}],
+"Input",CellLabel -> "In[11]:= ",ExpressionUUID -> "bb88a193-0099-4aa4-95dc-5dbc143bfd4f"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","1","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"0.357608766066353\"",ShowStringCharacters -> False],
+0.35760876606635295`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",1,"th iteration is: ",NumberForm[0.35760876606635295`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "0b78a820-d220-4404-8ff4-04d6a32c716e"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","2","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"0.5587083284512576\"",ShowStringCharacters -> False],
+0.5587083284512576`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",2,"th iteration is: ",NumberForm[0.5587083284512576`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "6e1ef3a7-3a92-4975-beef-e7cbd21ccbac"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","3","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"0.567130383148795\"",ShowStringCharacters -> False],
+0.5671303831487949`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",3,"th iteration is: ",NumberForm[0.5671303831487949`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "d5a55036-8c18-4846-862a-18ca2c9cf06c"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","4","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"0.5671432903796383\"",ShowStringCharacters -> False],
+0.5671432903796383`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",4,"th iteration is: ",NumberForm[0.5671432903796383`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "e0f5449e-629e-4975-9a41-a22d238b0205"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","5","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"0.5671432904097839\"",ShowStringCharacters -> False],
+0.5671432904097838`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",5,"th iteration is: ",NumberForm[0.5671432904097838`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "f47e7abc-607e-4393-a770-48b4b3108f33"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","6","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"0.5671432904097839\"",ShowStringCharacters -> False],
+0.5671432904097838`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",6,"th iteration is: ",NumberForm[0.5671432904097838`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "f60f3c4d-8b57-42a2-808c-6fe001a16b9c"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","7","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"0.5671432904097839\"",ShowStringCharacters -> False],
+0.5671432904097838`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",7,"th iteration is: ",NumberForm[0.5671432904097838`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "c1eb494e-d1d0-42cd-b0be-593bdbe77e96"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","8","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"0.5671432904097839\"",ShowStringCharacters -> False],
+0.5671432904097838`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",8,"th iteration is: ",NumberForm[0.5671432904097838`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "a1910051-d301-49a9-aea2-0413ba9e164a"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","9","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"0.5671432904097839\"",ShowStringCharacters -> False],
+0.5671432904097838`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",9,"th iteration is: ",NumberForm[0.5671432904097838`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "ebfacc46-e97b-4dad-95a3-fb5c8204cb8f"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","10","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"0.5671432904097839\"",ShowStringCharacters -> False],
+0.5671432904097838`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",10,"th iteration is: ",NumberForm[0.5671432904097838`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "eb70d2de-5a38-4445-9226-2e9444fee851"],Cell[
+BoxData[
+RowBox[{RowBox[{"-","13"}],"+",SuperscriptBox["x","3"]}],StandardForm],"Output",CellLabel -> "Out[12]= ",
+ExpressionUUID -> "c79943f1-3379-4242-930b-c09c6fc53042"]},Open],ExpressionUUID -> "3aba50d2-e595-47ba-89f1-29a1f14edebb"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{RowBox[{"ClearAll",";"}]," "}],"\n",RowBox[{RowBox[{RowBox[
+{"Newtonraphsonself","[",RowBox[{"x0_",","," ","max_"}],"]"}]," ",":="," ","\n",RowBox[
+{"Module","[",RowBox[{RowBox[{"{",RowBox[{"p0"," ","="," ",RowBox[{"N","[","x0","]"}]}],"}"}],",","\n",RowBox[
+{RowBox[{"k"," ","="," ","0"}],";"," ","\n",RowBox[{"While","[",RowBox[{RowBox[{"k"," ","<"," ","max"}],","," ","\n",RowBox[
+{RowBox[{"p1"," ","="," ",RowBox[{"p0"," ","-"," ",RowBox[{"(",RowBox[{RowBox[{"f","[","p0","]"}]," ","/"," ",RowBox[
+{RowBox[{"f","'"}],"[","p0","]"}]}],")"}]}]}],";"," ","\n",RowBox[{"k"," ","="," ",RowBox[
+{"k"," ","+"," ","1"}]}],";"," ","\n",RowBox[{"p0"," ","="," ","p1"}],";"," ","\n",RowBox[
+{"Print","[",RowBox[{"\"Value at \"",","," ","k",","," ","\"th iteration is: \"",","," ",RowBox[
+{"NumberForm","[",RowBox[{"p1",","," ","16"}],"]"}]}],"]"}],";"}]}],"]"}],";"}]}],"\n","]"}]}],";"}],"\n",RowBox[
+{RowBox[{"Newtonraphsonself","[",RowBox[{"1",","," ","10"}],"]"}]," "}],"\n",RowBox[
+{RowBox[{"f","[","x_","]"}]," ","="," ",RowBox[{RowBox[{"(",RowBox[{"x","^","3"}],")"}]," ","+"," ",RowBox[
+{"(",RowBox[{"4"," ","*"," ",RowBox[{"(",RowBox[{"x","^","2"}],")"}]}],")"}]," ","-"," ","10"}]}]}],
+"Input",CellLabel -> "In[17]:= ",ExpressionUUID -> "6fa1c370-6504-4496-b3b4-f1fc216bb55e"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","1","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"1.454545454545455\"",ShowStringCharacters -> False],
+1.4545454545454546`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",1,"th iteration is: ",NumberForm[1.4545454545454546`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "7b54761a-f45e-4e94-b19f-f41da22baf2e"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","2","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"1.368900401069519\"",ShowStringCharacters -> False],
+1.3689004010695187`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",2,"th iteration is: ",NumberForm[1.3689004010695187`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "fc9922e6-4104-4cb9-a764-a595323b6900"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","3","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"1.365236600202116\"",ShowStringCharacters -> False],
+1.365236600202116`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",3,"th iteration is: ",NumberForm[1.365236600202116`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "39937e70-0987-4c7b-b1c4-86f02a6ffdc4"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","4","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"1.365230013435367\"",ShowStringCharacters -> False],
+1.3652300134353665`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",4,"th iteration is: ",NumberForm[1.3652300134353665`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "d612b496-4b4d-47fd-9c4e-5814aad5050d"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","5","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"1.365230013414097\"",ShowStringCharacters -> False],
+1.3652300134140969`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",5,"th iteration is: ",NumberForm[1.3652300134140969`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "9964df87-30dd-4070-9dd7-e5cb66ec0598"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","6","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"1.365230013414097\"",ShowStringCharacters -> False],
+1.3652300134140969`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",6,"th iteration is: ",NumberForm[1.3652300134140969`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "e1418920-6b03-4650-8e18-81349f862f3d"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","7","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"1.365230013414097\"",ShowStringCharacters -> False],
+1.3652300134140969`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",7,"th iteration is: ",NumberForm[1.3652300134140969`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "1c51652e-70e2-4acc-85df-ba23916317cd"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","8","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"1.365230013414097\"",ShowStringCharacters -> False],
+1.3652300134140969`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",8,"th iteration is: ",NumberForm[1.3652300134140969`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "5846b87b-2f42-4573-909c-c0e772b47361"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","9","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"1.365230013414097\"",ShowStringCharacters -> False],
+1.3652300134140969`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",9,"th iteration is: ",NumberForm[1.3652300134140969`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "56dd953a-4900-4c52-9cd5-2979813db5dc"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Value at \"","\[InvisibleSpace]","10","\[InvisibleSpace]","\"th iteration is: \"","\[InvisibleSpace]",TagBox[
+InterpretationBox[StyleBox["\"1.365230013414097\"",ShowStringCharacters -> False],
+1.3652300134140969`,AutoDelete -> True],Function[NumberForm[Slot[1],16]]]}],SequenceForm[
+"Value at ",10,"th iteration is: ",NumberForm[1.3652300134140969`,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "81aa3ac6-43fb-4c23-90e4-f14605b301e1"],Cell[
+BoxData[
+RowBox[{RowBox[{"-","10"}],"+",RowBox[{"4"," ",SuperscriptBox["x","2"]}],"+",SuperscriptBox[
+"x","3"]}],StandardForm],"Output",CellLabel -> "Out[20]= ",ExpressionUUID -> "cc3e1eaa-e309-43d5-8ea3-b2d435eecf25"]},
+Open],ExpressionUUID -> "0e45b271-95e7-484e-96eb-4d478b342f58"]},StyleDefinitions -> "Default.nb",
+FrontEndVersion -> "13. for Wolfram Cloud 1.61.2 (January 4, 2022)"]

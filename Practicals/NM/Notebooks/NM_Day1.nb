@@ -1,0 +1,451 @@
+Notebook[{Cell[
+CellGroupData[{Cell[
+BoxData[{RowBox[{RowBox[{"f","[","x_","]"}]," ",":="," ",RowBox[
+{"Cos","[","x","]"}]}],"\n",RowBox[{RowBox[{"x0"," ","="," ","0"}],";"}],"\n",RowBox[
+{RowBox[{"x1","=","2"}],";"}],"\n",RowBox[{RowBox[{"n","=","14"}],";"}],"\n",RowBox[
+{RowBox[{"If","[",RowBox[{RowBox[{RowBox[{RowBox[{"f","[","x0","]"}],"*",RowBox[{"f","[","x1","]"}]}],">","0"}],",","\n",RowBox[
+{"Print","[","\"These values do not fit in IVT. Please change the values\"","]"}],",","\n",RowBox[
+{RowBox[{"For","[",RowBox[{RowBox[{"i","=","1"}],",",RowBox[{"i","\[LessEqual]","n"}],",",RowBox[
+{"i","++"}],",",RowBox[{RowBox[{"a","=",RowBox[{RowBox[{"(",RowBox[{"x0","+","x1"}],")"}],"/","2"}]}],";","\n",RowBox[
+{"Print","[",RowBox[{"i",",","\"th iteration is\"",",","a"}],"]"}],";","\n",RowBox[
+{"If","[",RowBox[{RowBox[{RowBox[{RowBox[{"f","[","x0","]"}],"*",RowBox[{"f","[","a","]"}]}],"<","0"}],",",RowBox[
+{"x1","=","a"}],",",RowBox[{"x0","=","a"}]}],"]"}],";"}]}],"]"}],";"}]}],"]"}],";"}]}],
+"Input",CellLabel -> "In[86]:= ",ExpressionUUID -> "625235c8-4570-4293-a82c-563c213a167b"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"1","\[InvisibleSpace]","\"th iteration is\"","\[InvisibleSpace]","1"}],
+SequenceForm[1,"th iteration is",1],Editable -> False],StandardForm],"Print",ExpressionUUID -> "92959d0e-3e7e-42a7-a854-5f981689e15e"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"2","\[InvisibleSpace]","\"th iteration is\"","\[InvisibleSpace]",FractionBox[
+"3","2"]}],SequenceForm[2,"th iteration is",Rational[3,2]],Editable -> False],StandardForm],
+"Print",ExpressionUUID -> "db96d55b-a2c3-4613-994a-333c35ed03ce"],Cell[
+BoxData[InterpretationBox[
+RowBox[{"3","\[InvisibleSpace]","\"th iteration is\"","\[InvisibleSpace]",FractionBox[
+"7","4"]}],SequenceForm[3,"th iteration is",Rational[7,4]],Editable -> False],StandardForm],
+"Print",ExpressionUUID -> "71274857-e303-4f82-aaff-b38550f4b1cd"],Cell[
+BoxData[InterpretationBox[
+RowBox[{"4","\[InvisibleSpace]","\"th iteration is\"","\[InvisibleSpace]",FractionBox[
+"13","8"]}],SequenceForm[4,"th iteration is",Rational[13,8]],Editable -> False],StandardForm],
+"Print",ExpressionUUID -> "7a46a820-af00-4ef6-b0a1-bca43af03d37"],Cell[
+BoxData[InterpretationBox[
+RowBox[{"5","\[InvisibleSpace]","\"th iteration is\"","\[InvisibleSpace]",FractionBox[
+"25","16"]}],SequenceForm[5,"th iteration is",Rational[25,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "175a5234-ce40-4103-b5e6-828c4c9a1eb3"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"6","\[InvisibleSpace]","\"th iteration is\"","\[InvisibleSpace]",FractionBox[
+"51","32"]}],SequenceForm[6,"th iteration is",Rational[51,32]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "87f459e2-d969-479a-bda8-50b4a3d71f33"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"7","\[InvisibleSpace]","\"th iteration is\"","\[InvisibleSpace]",FractionBox[
+"101","64"]}],SequenceForm[7,"th iteration is",Rational[101,64]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "2f2d7ec0-3ace-46c1-a796-a30d14d76ade"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"8","\[InvisibleSpace]","\"th iteration is\"","\[InvisibleSpace]",FractionBox[
+"201","128"]}],SequenceForm[8,"th iteration is",Rational[201,128]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "836179a1-2df8-478b-b239-3b94d04794c6"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"9","\[InvisibleSpace]","\"th iteration is\"","\[InvisibleSpace]",FractionBox[
+"403","256"]}],SequenceForm[9,"th iteration is",Rational[403,256]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "d3ce9df5-02a9-430a-8cd1-3addeb8f3637"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"10","\[InvisibleSpace]","\"th iteration is\"","\[InvisibleSpace]",FractionBox[
+"805","512"]}],SequenceForm[10,"th iteration is",Rational[805,512]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "84533835-f65e-4d8b-8a53-0f4fa3baea49"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"11","\[InvisibleSpace]","\"th iteration is\"","\[InvisibleSpace]",FractionBox[
+"1609","1024"]}],SequenceForm[11,"th iteration is",Rational[1609,1024]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "a98c8a6e-b951-4fbd-8349-d428d108da9f"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"12","\[InvisibleSpace]","\"th iteration is\"","\[InvisibleSpace]",FractionBox[
+"3217","2048"]}],SequenceForm[12,"th iteration is",Rational[3217,2048]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "7e8a9f93-0d65-4c47-bad5-7cb7cf030702"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"13","\[InvisibleSpace]","\"th iteration is\"","\[InvisibleSpace]",FractionBox[
+"6433","4096"]}],SequenceForm[13,"th iteration is",Rational[6433,4096]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "81c7557c-38e8-474f-ac50-7afb3cd771ff"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"14","\[InvisibleSpace]","\"th iteration is\"","\[InvisibleSpace]",FractionBox[
+"12867","8192"]}],SequenceForm[14,"th iteration is",Rational[12867,8192]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "2a1cd6ce-a912-4dba-b0a5-7a0481aa7a33"]},
+Open],ExpressionUUID -> "609af6dd-c1be-476c-abf9-683fc9b74af1"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{RowBox[{"f","[","x_","]"}],":=",RowBox[{RowBox[{"(",RowBox[
+{"x","^","3"}],")"}],"-",RowBox[{"(",RowBox[{"5","*","x"}],")"}],"+","1"}]}],"\n",RowBox[
+{RowBox[{"x0","=","0"}],";"}],"\n",RowBox[{RowBox[{"x1","=","1"}],";"}],"\n",RowBox[
+{"n","=","14"}],"\n",RowBox[{RowBox[{"If","[",RowBox[{RowBox[{RowBox[{RowBox[{"f","[","x0","]"}],"*",RowBox[
+{"f","[","x1","]"}]}],">","0"}],",",RowBox[{"Print","[","\"These values do not fit in IVT. Please change the values\"","]"}],",","\n",RowBox[
+{RowBox[{"For","[",RowBox[{RowBox[{"i","=","0"}],",",RowBox[{"i","\[LessEqual]","n"}],",",RowBox[
+{"i","++"}],",",RowBox[{RowBox[{"a","=",RowBox[{RowBox[{"(",RowBox[{"x0","+","x1"}],")"}],"/","2"}]}],";","\n",RowBox[
+{"Print","[",RowBox[{"i",",","\"TH ITERATION VALUE IS : \""," ",",","a"}],"]"}],";","\n",RowBox[
+{"If","[",RowBox[{RowBox[{RowBox[{RowBox[{"f","[","x0","]"}],"*",RowBox[{"f","[","a","]"}]}],"<","0"}],",",RowBox[
+{"x1","=","a"}],",",RowBox[{"x0","=","a"}]}],"]"}],";"}]}],"]"}],";"}]}],"]"}],";"}]}],
+"Input",CellLabel -> "In[61]:= ",ExpressionUUID -> "0ef0e4de-57f9-4c5f-b4c6-a41491fabb89"],Cell[
+BoxData[
+"14",StandardForm],"Output",CellLabel -> "Out[64]= ",ExpressionUUID -> "2b9b588f-ddee-4b31-b1fb-cf42bbaef9c2"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"0","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"1","2"]}],SequenceForm[0,"TH ITERATION VALUE IS : ",Rational[1,2]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "9c5f2fc7-bf4d-4731-9186-08dd5783a5d0"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"1","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"1","4"]}],SequenceForm[1,"TH ITERATION VALUE IS : ",Rational[1,4]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "8a61c3c8-b251-4375-baa6-e77b02eeeb67"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"2","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"1","8"]}],SequenceForm[2,"TH ITERATION VALUE IS : ",Rational[1,8]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "26ea8520-c7da-4862-9083-9963a54869b3"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"3","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"3","16"]}],SequenceForm[3,"TH ITERATION VALUE IS : ",Rational[3,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "97375e38-64dd-4d80-a8e2-224a2d449f65"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"4","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"7","32"]}],SequenceForm[4,"TH ITERATION VALUE IS : ",Rational[7,32]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "56abdffd-e597-4247-a87d-21f26ebfde73"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"5","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"13","64"]}],SequenceForm[5,"TH ITERATION VALUE IS : ",Rational[13,64]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "540321ef-950e-4435-98ea-61a1147f6b2a"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"6","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"25","128"]}],SequenceForm[6,"TH ITERATION VALUE IS : ",Rational[25,128]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "897be6e5-777d-4660-9440-313827d8cc3c"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"7","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"51","256"]}],SequenceForm[7,"TH ITERATION VALUE IS : ",Rational[51,256]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "16cf086c-65cc-4702-9ff7-33fb0d63c3e7"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"8","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"103","512"]}],SequenceForm[8,"TH ITERATION VALUE IS : ",Rational[103,512]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "d34c54eb-1015-49fe-91e2-a3e82f1fbdb5"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"9","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"207","1024"]}],SequenceForm[9,"TH ITERATION VALUE IS : ",Rational[207,1024]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "6e02f2b1-7edb-4bc9-8ad6-50ac07372dc9"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"10","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"413","2048"]}],SequenceForm[10,"TH ITERATION VALUE IS : ",Rational[413,2048]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "b6bb3e32-54be-47f8-9040-c603b4b9560e"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"11","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"825","4096"]}],SequenceForm[11,"TH ITERATION VALUE IS : ",Rational[825,4096]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "a997a7cc-c127-4875-b93e-3a347ac4deda"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"12","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"1651","8192"]}],SequenceForm[12,"TH ITERATION VALUE IS : ",Rational[1651,8192]],
+Editable -> False],StandardForm],"Print",ExpressionUUID -> "fbf6284d-5015-4dab-97d4-c8dda1cd9a05"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"13","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"3303","16384"]}],SequenceForm[13,"TH ITERATION VALUE IS : ",Rational[3303,16384]],
+Editable -> False],StandardForm],"Print",ExpressionUUID -> "780b6ae3-8000-42ae-a764-6dbaf0b7713e"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"14","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"6607","32768"]}],SequenceForm[14,"TH ITERATION VALUE IS : ",Rational[6607,32768]],
+Editable -> False],StandardForm],"Print",ExpressionUUID -> "2c46ec2b-5939-4d28-af7c-038057b7b535"]},
+Open],ExpressionUUID -> "d2263d68-bbeb-40bc-8b67-c0ed41cb70f1"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{RowBox[{"f","[","x_","]"}],":=",RowBox[{RowBox[{"Tan","[",RowBox[
+{"Pi","*","x"}],"]"}],"-","x","-","6"}]}],"\n",RowBox[{RowBox[{"x0","=","0.4"}],";"}],"\n",RowBox[
+{RowBox[{"x1","=","0.48"}],";"}],"\n",RowBox[{"n","=","14"}],"\n",RowBox[{RowBox[
+{"If","[",RowBox[{RowBox[{RowBox[{RowBox[{"f","[","x0","]"}],"*",RowBox[{"f","[","x1","]"}]}],">","0"}],",",RowBox[
+{"Print","[","\"These values do not fit in IVT. Please change the values\"","]"}],",","\n",RowBox[
+{RowBox[{"For","[",RowBox[{RowBox[{"i","=","0"}],",",RowBox[{"i","\[LessEqual]","n"}],",",RowBox[
+{"i","++"}],",",RowBox[{RowBox[{"a","=",RowBox[{RowBox[{"(",RowBox[{"x0","+","x1"}],")"}],"/","2"}]}],";","\n",RowBox[
+{"Print","[",RowBox[{"i",",","\"TH ITERATION VALUE IS : \""," ",",","a"}],"]"}],";","\n",RowBox[
+{"If","[",RowBox[{RowBox[{RowBox[{RowBox[{"f","[","x0","]"}],"*",RowBox[{"f","[","a","]"}]}],"<","0"}],",",RowBox[
+{"x1","=","a"}],",",RowBox[{"x0","=","a"}]}],"]"}],";"}]}],"]"}],";"}]}],"]"}],";"}]}],
+"Input",CellLabel -> "In[66]:= ",ExpressionUUID -> "eeed3571-d02d-4cff-adec-55e535af504e"],Cell[
+BoxData[
+"14",StandardForm],"Output",CellLabel -> "Out[69]= ",ExpressionUUID -> "32ced969-945f-4636-a558-ed00dd5ee285"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"0","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]","0.44`"}],
+SequenceForm[0,"TH ITERATION VALUE IS : ",0.44`],Editable -> False],StandardForm],
+"Print",ExpressionUUID -> "15d09778-160a-4bad-9a0f-95456c71607c"],Cell[
+BoxData[InterpretationBox[
+RowBox[{"1","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]","0.45999999999999996`"}],
+SequenceForm[1,"TH ITERATION VALUE IS : ",0.45999999999999996`],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "c6534347-50fc-45ba-b004-65aefa510758"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"2","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]","0.44999999999999996`"}],
+SequenceForm[2,"TH ITERATION VALUE IS : ",0.44999999999999996`],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "db21e44f-044e-42a2-8248-5ac0ff18a3d6"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"3","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]","0.45499999999999996`"}],
+SequenceForm[3,"TH ITERATION VALUE IS : ",0.45499999999999996`],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "09c86f64-ff7d-49c2-81e4-e8f495290804"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"4","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]","0.45249999999999996`"}],
+SequenceForm[4,"TH ITERATION VALUE IS : ",0.45249999999999996`],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "94797500-37ff-49c7-a067-ef005f1809b0"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"5","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]","0.45124999999999993`"}],
+SequenceForm[5,"TH ITERATION VALUE IS : ",0.45124999999999993`],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "7085bfb7-a7ec-4668-901d-a20654ae3145"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"6","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]","0.45062499999999994`"}],
+SequenceForm[6,"TH ITERATION VALUE IS : ",0.45062499999999994`],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "454ec403-8ee0-4e2a-8c19-bcca79102bff"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"7","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]","0.45093749999999994`"}],
+SequenceForm[7,"TH ITERATION VALUE IS : ",0.45093749999999994`],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "05a7bc94-ab02-4da9-ab86-a33e3bd43b41"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"8","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]","0.45109374999999996`"}],
+SequenceForm[8,"TH ITERATION VALUE IS : ",0.45109374999999996`],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "3b9e17bb-d920-4544-b1c9-00cafe9267fe"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"9","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]","0.4510156249999999`"}],
+SequenceForm[9,"TH ITERATION VALUE IS : ",0.4510156249999999`],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "c007ccd4-a024-4428-9c93-fd8f3faf341f"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"10","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]","0.45105468749999994`"}],
+SequenceForm[10,"TH ITERATION VALUE IS : ",0.45105468749999994`],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "c094f6e5-14b6-4fa1-93c1-73fddffa96f4"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"11","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]","0.4510351562499999`"}],
+SequenceForm[11,"TH ITERATION VALUE IS : ",0.4510351562499999`],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "393b3cc5-13c1-405e-8120-aef9f83c47fc"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"12","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]","0.4510449218749999`"}],
+SequenceForm[12,"TH ITERATION VALUE IS : ",0.4510449218749999`],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "668983c9-8e62-48e0-8367-112bac79b4df"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"13","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]","0.4510498046874999`"}],
+SequenceForm[13,"TH ITERATION VALUE IS : ",0.4510498046874999`],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "40c7afc9-5315-4964-bf60-99070d8fba61"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"14","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]","0.4510473632812499`"}],
+SequenceForm[14,"TH ITERATION VALUE IS : ",0.4510473632812499`],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "cb5818e2-b47d-4b16-8605-467a8f837191"]},
+Open],ExpressionUUID -> "c2673567-8472-4efb-a62a-d0e594c9b11c"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{RowBox[{"f","[","x_","]"}],":=",RowBox[{RowBox[{"(",RowBox[
+{"x","^","3"}],")"}],"+",RowBox[{"(",RowBox[{"2","*","x","*","x"}],")"}],"-",RowBox[
+{"(",RowBox[{"3","*","x"}],")"}],"-","1"}]}],"\n",RowBox[{RowBox[{"x0","=",RowBox[
+{"-","3"}]}],";"}],"\n",RowBox[{RowBox[{"x1","=",RowBox[{"-","2"}]}],";"}],"\n",RowBox[
+{"n","=","14"}],"\n",RowBox[{RowBox[{"If","[",RowBox[{RowBox[{RowBox[{RowBox[{"f","[","x0","]"}],"*",RowBox[
+{"f","[","x1","]"}]}],">","0"}],",",RowBox[{"Print","[","\"These values do not fit in IVT. Please change the values\"","]"}],",","\n",RowBox[
+{RowBox[{"For","[",RowBox[{RowBox[{"i","=","0"}],",",RowBox[{"i","\[LessEqual]","n"}],",",RowBox[
+{"i","++"}],",",RowBox[{RowBox[{"a","=",RowBox[{RowBox[{"(",RowBox[{"x0","+","x1"}],")"}],"/","2"}]}],";","\n",RowBox[
+{"Print","[",RowBox[{"i",",","\"TH ITERATION VALUE IS : \""," ",",","a"}],"]"}],";","\n",RowBox[
+{"If","[",RowBox[{RowBox[{RowBox[{RowBox[{"f","[","x0","]"}],"*",RowBox[{"f","[","a","]"}]}],"<","0"}],",",RowBox[
+{"x1","=","a"}],",",RowBox[{"x0","=","a"}]}],"]"}],";"}]}],"]"}],";"}]}],"]"}],";"}]}],
+"Input",CellLabel -> "In[91]:= ",ExpressionUUID -> "dbcfdb58-e7db-4938-b155-a9409adf3806"],Cell[
+BoxData[
+"14",StandardForm],"Output",CellLabel -> "Out[94]= ",ExpressionUUID -> "5404f82f-667a-40b0-b8be-444984d5bc71"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"0","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",RowBox[
+{"-",FractionBox["5","2"]}]}],SequenceForm[0,"TH ITERATION VALUE IS : ",Rational[
+-5,2]],Editable -> False],StandardForm],"Print",ExpressionUUID -> "eb4874c2-b13a-4367-9954-4abdc8ede416"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"1","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",RowBox[
+{"-",FractionBox["11","4"]}]}],SequenceForm[1,"TH ITERATION VALUE IS : ",Rational[
+-11,4]],Editable -> False],StandardForm],"Print",ExpressionUUID -> "cd4bf156-7f8b-4522-a976-5740770d25f6"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"2","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",RowBox[
+{"-",FractionBox["23","8"]}]}],SequenceForm[2,"TH ITERATION VALUE IS : ",Rational[
+-23,8]],Editable -> False],StandardForm],"Print",ExpressionUUID -> "a014b7e3-c562-4b26-8096-185d593e415b"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"3","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",RowBox[
+{"-",FractionBox["47","16"]}]}],SequenceForm[3,"TH ITERATION VALUE IS : ",Rational[
+-47,16]],Editable -> False],StandardForm],"Print",ExpressionUUID -> "cade107a-0f5f-4301-9b97-80938bdff0b6"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"4","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",RowBox[
+{"-",FractionBox["93","32"]}]}],SequenceForm[4,"TH ITERATION VALUE IS : ",Rational[
+-93,32]],Editable -> False],StandardForm],"Print",ExpressionUUID -> "47edb969-e326-44e2-860c-2cb156cadc01"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"5","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",RowBox[
+{"-",FractionBox["187","64"]}]}],SequenceForm[5,"TH ITERATION VALUE IS : ",Rational[
+-187,64]],Editable -> False],StandardForm],"Print",ExpressionUUID -> "e578970e-3eb5-49b6-bc83-725c379e0d5c"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"6","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",RowBox[
+{"-",FractionBox["373","128"]}]}],SequenceForm[6,"TH ITERATION VALUE IS : ",Rational[
+-373,128]],Editable -> False],StandardForm],"Print",ExpressionUUID -> "0e961f32-fc2f-4511-98b8-fe4a972daff7"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"7","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",RowBox[
+{"-",FractionBox["745","256"]}]}],SequenceForm[7,"TH ITERATION VALUE IS : ",Rational[
+-745,256]],Editable -> False],StandardForm],"Print",ExpressionUUID -> "a0517d0c-dc6d-402c-b376-cad90ca3a274"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"8","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",RowBox[
+{"-",FractionBox["1491","512"]}]}],SequenceForm[8,"TH ITERATION VALUE IS : ",Rational[
+-1491,512]],Editable -> False],StandardForm],"Print",ExpressionUUID -> "5d0e8007-e37b-4c79-beb6-01a8f3d11467"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"9","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",RowBox[
+{"-",FractionBox["2983","1024"]}]}],SequenceForm[9,"TH ITERATION VALUE IS : ",Rational[
+-2983,1024]],Editable -> False],StandardForm],"Print",ExpressionUUID -> "015f80a0-e3eb-4bf7-9d09-fb9134c9d367"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"10","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",RowBox[
+{"-",FractionBox["5965","2048"]}]}],SequenceForm[10,"TH ITERATION VALUE IS : ",Rational[
+-5965,2048]],Editable -> False],StandardForm],"Print",ExpressionUUID -> "03bdbbde-0607-4664-b54b-a28c3c3a96c7"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"11","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",RowBox[
+{"-",FractionBox["11929","4096"]}]}],SequenceForm[11,"TH ITERATION VALUE IS : ",Rational[
+-11929,4096]],Editable -> False],StandardForm],"Print",ExpressionUUID -> "1e4e94ab-5c58-4bc0-ac23-75c4ba4fedec"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"12","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",RowBox[
+{"-",FractionBox["23857","8192"]}]}],SequenceForm[12,"TH ITERATION VALUE IS : ",Rational[
+-23857,8192]],Editable -> False],StandardForm],"Print",ExpressionUUID -> "65c95507-6bd3-4980-b6d2-a02ee621a1b4"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"13","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",RowBox[
+{"-",FractionBox["47713","16384"]}]}],SequenceForm[13,"TH ITERATION VALUE IS : ",
+Rational[-47713,16384]],Editable -> False],StandardForm],"Print",ExpressionUUID -> "8b25ee96-1eba-4833-ac91-d91bf018c569"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"14","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",RowBox[
+{"-",FractionBox["95427","32768"]}]}],SequenceForm[14,"TH ITERATION VALUE IS : ",
+Rational[-95427,32768]],Editable -> False],StandardForm],"Print",ExpressionUUID -> "1a1c3ba1-9d2b-4e6b-ad65-b0d4c5b64aa7"]},
+Open],ExpressionUUID -> "174a2365-b13b-426e-b8ef-47477d05570c"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{RowBox[{"f","[","x_","]"}],":=",RowBox[{RowBox[{"(",RowBox[
+{"x","^","7"}],")"}],"-","3"}]}],"\n",RowBox[{RowBox[{"x0","=","1"}],";"}],"\n",RowBox[
+{RowBox[{"x1","=","2"}],";"}],"\n",RowBox[{"n","=","14"}],"\n",RowBox[{RowBox[{"If","[",RowBox[
+{RowBox[{RowBox[{RowBox[{"f","[","x0","]"}],"*",RowBox[{"f","[","x1","]"}]}],">","0"}],",",RowBox[
+{"Print","[","\"These values do not fit in IVT. Please change the values\"","]"}],",","\n",RowBox[
+{RowBox[{"For","[",RowBox[{RowBox[{"i","=","0"}],",",RowBox[{"i","\[LessEqual]","n"}],",",RowBox[
+{"i","++"}],",",RowBox[{RowBox[{"a","=",RowBox[{RowBox[{"(",RowBox[{"x0","+","x1"}],")"}],"/","2"}]}],";","\n",RowBox[
+{"Print","[",RowBox[{"i",",","\"TH ITERATION VALUE IS : \""," ",",","a"}],"]"}],";","\n",RowBox[
+{"If","[",RowBox[{RowBox[{RowBox[{RowBox[{"f","[","x0","]"}],"*",RowBox[{"f","[","a","]"}]}],"<","0"}],",",RowBox[
+{"x1","=","a"}],",",RowBox[{"x0","=","a"}]}],"]"}],";"}]}],"]"}],";"}]}],"]"}],";"}]}],
+"Input",CellLabel -> "In[76]:= ",ExpressionUUID -> "d07e126f-3305-4123-826f-a071d08303d8"],Cell[
+BoxData[
+"14",StandardForm],"Output",CellLabel -> "Out[79]= ",ExpressionUUID -> "0ea0047f-e2b8-479e-b7df-89b581690b7c"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"0","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"3","2"]}],SequenceForm[0,"TH ITERATION VALUE IS : ",Rational[3,2]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "618ae20f-4021-407a-af43-ad48e0b459fa"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"1","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"5","4"]}],SequenceForm[1,"TH ITERATION VALUE IS : ",Rational[5,4]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "31b77ca1-d076-445e-994d-68b60d797482"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"2","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"9","8"]}],SequenceForm[2,"TH ITERATION VALUE IS : ",Rational[9,8]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "71540129-fd46-47cc-b17e-45f9379a8f88"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"3","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"19","16"]}],SequenceForm[3,"TH ITERATION VALUE IS : ",Rational[19,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "4b27c398-f251-473e-9ae3-96a5fda7deee"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"4","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"37","32"]}],SequenceForm[4,"TH ITERATION VALUE IS : ",Rational[37,32]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "98ee233d-d19f-49fe-ab92-5541a50eda13"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"5","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"75","64"]}],SequenceForm[5,"TH ITERATION VALUE IS : ",Rational[75,64]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "aaae6fd2-4303-4c6c-b0be-381e960446f4"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"6","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"149","128"]}],SequenceForm[6,"TH ITERATION VALUE IS : ",Rational[149,128]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "02f6165c-a0a8-4851-b626-267fd710f8ac"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"7","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"299","256"]}],SequenceForm[7,"TH ITERATION VALUE IS : ",Rational[299,256]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "423fd90a-eb37-466e-ba30-1205f5951f83"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"8","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"599","512"]}],SequenceForm[8,"TH ITERATION VALUE IS : ",Rational[599,512]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "bc974295-98a4-4f92-b7cd-76d26233763e"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"9","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"1199","1024"]}],SequenceForm[9,"TH ITERATION VALUE IS : ",Rational[1199,1024]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "5f8e810a-6c20-49a6-91e3-8b0f38cd6bf7"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"10","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"2397","2048"]}],SequenceForm[10,"TH ITERATION VALUE IS : ",Rational[2397,2048]],
+Editable -> False],StandardForm],"Print",ExpressionUUID -> "69e0c946-6e63-43db-bb81-dd4fc5f61470"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"11","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"4793","4096"]}],SequenceForm[11,"TH ITERATION VALUE IS : ",Rational[4793,4096]],
+Editable -> False],StandardForm],"Print",ExpressionUUID -> "85beaeb7-f27d-4e83-8717-2d466890454e"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"12","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"9585","8192"]}],SequenceForm[12,"TH ITERATION VALUE IS : ",Rational[9585,8192]],
+Editable -> False],StandardForm],"Print",ExpressionUUID -> "839bf402-afd0-4251-8574-e1cbff29d533"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"13","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"19169","16384"]}],SequenceForm[13,"TH ITERATION VALUE IS : ",Rational[19169,16384]],
+Editable -> False],StandardForm],"Print",ExpressionUUID -> "084e247f-6070-4852-9efe-2e1f25e680aa"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"14","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"38337","32768"]}],SequenceForm[14,"TH ITERATION VALUE IS : ",Rational[38337,32768]],
+Editable -> False],StandardForm],"Print",ExpressionUUID -> "0c2782f8-38b7-4dbe-8856-7c4772416fdb"]},
+Open],ExpressionUUID -> "66e58cc8-88b2-49e8-9c09-4cbee619cb3f"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{RowBox[{"f","[","x_","]"}],":=",RowBox[{RowBox[{"Exp","[",RowBox[
+{RowBox[{"-","1"}],"*","x"}],"]"}],"-","x"}]}],"\n",RowBox[{RowBox[{"x0","=","0"}],";"}],"\n",RowBox[
+{RowBox[{"x1","=","1"}],";"}],"\n",RowBox[{"n","=","14"}],"\n",RowBox[{RowBox[{"If","[",RowBox[
+{RowBox[{RowBox[{RowBox[{"f","[","x0","]"}],"*",RowBox[{"f","[","x1","]"}]}],">","0"}],",",RowBox[
+{"Print","[","\"These values do not fit in IVT. Please change the values\"","]"}],",","\n",RowBox[
+{RowBox[{"For","[",RowBox[{RowBox[{"i","=","0"}],",",RowBox[{"i","\[LessEqual]","n"}],",",RowBox[
+{"i","++"}],",",RowBox[{RowBox[{"a","=",RowBox[{RowBox[{"(",RowBox[{"x0","+","x1"}],")"}],"/","2"}]}],";","\n",RowBox[
+{"Print","[",RowBox[{"i",",","\"TH ITERATION VALUE IS : \""," ",",","a"}],"]"}],";","\n",RowBox[
+{"If","[",RowBox[{RowBox[{RowBox[{RowBox[{"f","[","x0","]"}],"*",RowBox[{"f","[","a","]"}]}],"<","0"}],",",RowBox[
+{"x1","=","a"}],",",RowBox[{"x0","=","a"}]}],"]"}],";"}]}],"]"}],";"}]}],"]"}],";"}]}],
+"Input",CellLabel -> "In[81]:= ",ExpressionUUID -> "8f567966-f683-495d-b52f-c5c78f177e81"],Cell[
+BoxData[
+"14",StandardForm],"Output",CellLabel -> "Out[84]= ",ExpressionUUID -> "3cc459d7-ccb0-4b77-9f65-7f54eceb55e3"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"0","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"1","2"]}],SequenceForm[0,"TH ITERATION VALUE IS : ",Rational[1,2]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "338a5e9c-6d11-41f5-b05b-2e82ce85d957"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"1","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"3","4"]}],SequenceForm[1,"TH ITERATION VALUE IS : ",Rational[3,4]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "136aca4d-a5d8-4017-a304-36f713484104"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"2","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"5","8"]}],SequenceForm[2,"TH ITERATION VALUE IS : ",Rational[5,8]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "8e4df271-5a57-4f6e-8987-d7b264d2af1e"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"3","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"9","16"]}],SequenceForm[3,"TH ITERATION VALUE IS : ",Rational[9,16]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "2bcdbd57-ef2b-4576-87e6-f788e10a5308"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"4","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"19","32"]}],SequenceForm[4,"TH ITERATION VALUE IS : ",Rational[19,32]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "55decc6c-b90c-4648-aa7a-40846a3afc6d"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"5","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"37","64"]}],SequenceForm[5,"TH ITERATION VALUE IS : ",Rational[37,64]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "4da62c8e-f83b-4c3c-a47d-a8ad6222047d"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"6","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"73","128"]}],SequenceForm[6,"TH ITERATION VALUE IS : ",Rational[73,128]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "489442b8-3685-42e2-9084-edab49eea0fd"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"7","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"145","256"]}],SequenceForm[7,"TH ITERATION VALUE IS : ",Rational[145,256]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "d32d7210-d2a7-4549-babe-d4940b087365"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"8","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"291","512"]}],SequenceForm[8,"TH ITERATION VALUE IS : ",Rational[291,512]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "7ad1f2a4-61c7-4bf6-8c80-e25135442c72"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"9","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"581","1024"]}],SequenceForm[9,"TH ITERATION VALUE IS : ",Rational[581,1024]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "7289612f-a9e4-45f1-bf05-c50bdfc78b5d"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"10","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"1161","2048"]}],SequenceForm[10,"TH ITERATION VALUE IS : ",Rational[1161,2048]],
+Editable -> False],StandardForm],"Print",ExpressionUUID -> "63771752-5cdf-4341-be3a-9823209198d6"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"11","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"2323","4096"]}],SequenceForm[11,"TH ITERATION VALUE IS : ",Rational[2323,4096]],
+Editable -> False],StandardForm],"Print",ExpressionUUID -> "c93d2cb9-ab16-4a58-b471-32b28dbf2cf1"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"12","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"4647","8192"]}],SequenceForm[12,"TH ITERATION VALUE IS : ",Rational[4647,8192]],
+Editable -> False],StandardForm],"Print",ExpressionUUID -> "59a29f2c-506a-4cf3-aa95-8a7c9cb0da6b"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"13","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"9293","16384"]}],SequenceForm[13,"TH ITERATION VALUE IS : ",Rational[9293,16384]],
+Editable -> False],StandardForm],"Print",ExpressionUUID -> "a6bdc97d-1e4f-4fee-90a4-8c3b70dcce2d"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"14","\[InvisibleSpace]","\"TH ITERATION VALUE IS : \"","\[InvisibleSpace]",FractionBox[
+"18585","32768"]}],SequenceForm[14,"TH ITERATION VALUE IS : ",Rational[18585,32768]],
+Editable -> False],StandardForm],"Print",ExpressionUUID -> "262baa25-c91d-4476-94e3-172a25c90d00"]},
+Open],ExpressionUUID -> "e4266795-7b3d-4264-abd7-38cbc2139a67"]},StyleDefinitions -> "Default.nb",
+FrontEndVersion -> "13. for Wolfram Cloud 1.61.2 (January 4, 2022)",Magnification -> 1]

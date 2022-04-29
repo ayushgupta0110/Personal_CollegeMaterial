@@ -1,0 +1,52 @@
+Notebook[{Cell[
+CellGroupData[{Cell[
+BoxData[{RowBox[{"ClearAll",";"}],"\n",RowBox[
+{RowBox[{RowBox[{"Gaussian","[",RowBox[{"a0_",",","b0_"}],"]"}],":=","\n","    ",RowBox[
+{"Module","[",RowBox[{RowBox[{"{",RowBox[{RowBox[{"a","=",RowBox[{"N","[","a0","]"}]}],","," ",RowBox[
+{"b","=",RowBox[{"N","[","b0","]"}]}]}],"}"}],",","\n","    ",RowBox[{RowBox[{"If","[",RowBox[
+{RowBox[{RowBox[{"a","==",RowBox[{"-","1"}]}]," ","&&"," ",RowBox[{"b","==","1"}]}],",","\n","    ",RowBox[
+{"Print","[",RowBox[{"\"Answer = \"",",",RowBox[{"N","[",RowBox[{RowBox[{"f","[",RowBox[
+{RowBox[{"-","1"}],"/",RowBox[{"Sqrt","[","3","]"}]}],"]"}],"+",RowBox[{"f","[",RowBox[
+{"1","/",RowBox[{"Sqrt","[","3","]"}]}]," ","]"}]}],"]"}]}],"]"}],",","\n","    ",RowBox[
+{RowBox[{RowBox[{"g","[","x_","]"}],":="," ",RowBox[{"f","[",RowBox[{RowBox[{RowBox[
+{"(",RowBox[{"a","+","b"}],")"}],"/","2"}]," ","+",RowBox[{RowBox[{"(",RowBox[{"b","-","a"}],")"}],"*",RowBox[
+{"x","/","2"}]}]}],"]"}]}],";","\n","    ",RowBox[{"T","=",RowBox[{RowBox[{"(",RowBox[
+{RowBox[{"(",RowBox[{"b","-","a"}],")"}],"/","2"}],")"}],"*",RowBox[{"(",RowBox[{RowBox[
+{"g","[",RowBox[{RowBox[{"-","1"}],"/",RowBox[{"Sqrt","[","3","]"}]}],"]"}],"+",RowBox[
+{"g","[",RowBox[{"1","/",RowBox[{"Sqrt","[","3","]"}]}],"]"}]}],")"}]}]}],";","\n","    ",RowBox[
+{"Print","[",RowBox[{"\"Answer = \"",",","T"}],"]"}]}]}],"\n","    ","]"}],";"}]}],"\n","    ","]"}]}],";"}],"\n",RowBox[
+{"\[NonBreakingSpace]",RowBox[{RowBox[{"Gaussian","[",RowBox[{"0",",","1"}],"]"}],";"}]}],"\n",RowBox[
+{"  ",RowBox[{RowBox[{RowBox[{"f","[","x_","]"}],":=",RowBox[{"1","/",RowBox[{"(",RowBox[
+{"1","+","x"}],")"}]}]}],";"}]}]}],"Input",CellLabel -> "In[13]:= ",ExpressionUUID -> "5f489b75-4095-4850-8a65-27740436a232"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Answer = \"","\[InvisibleSpace]","0.6923076923076923`"}],
+SequenceForm["Answer = ",0.6923076923076923`],Editable -> False],StandardForm],"Print",
+ExpressionUUID -> "a5420c3e-bb4e-4523-8531-9e1593ed147f"]},Open],ExpressionUUID -> "4e32147f-a173-4603-af24-761a35383f59"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{RowBox[{"Gaussian","[",RowBox[{"0",",","2"}],"]"}],";"}],"\n",RowBox[
+{RowBox[{RowBox[{"f","[","x_","]"}],":=",RowBox[{"1","/","x"}]}],";"}]}],"Input",
+CellLabel -> "In[21]:= ",ExpressionUUID -> "c1423481-908b-4e48-b7a6-81dc343a6ef7"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Answer = \"","\[InvisibleSpace]","3.000000000000001`"}],
+SequenceForm["Answer = ",3.000000000000001`],Editable -> False],StandardForm],"Print",
+ExpressionUUID -> "1fa2f5c6-0f17-4bef-8231-0d3111af499e"]},Open],ExpressionUUID -> "9e1bf75e-f64c-4505-8e38-ddc31f3ebe20"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{RowBox[{"Gaussian","[",RowBox[{"0",",","2"}],"]"}],";"}],"\n",RowBox[
+{RowBox[{RowBox[{"f","[","x_","]"}],":=",RowBox[{"Exp","[",RowBox[{RowBox[{"-","1"}],"*",RowBox[
+{"x","^","2"}]}],"]"}]}],";"}]}],"Input",CellLabel -> "In[63]:= ",ExpressionUUID -> "c4a3b4bc-209f-43f3-8bfe-3dac9ca33a3f"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Answer = \"","\[InvisibleSpace]","0.9194861166409164`"}],
+SequenceForm["Answer = ",0.9194861166409164`],Editable -> False],StandardForm],"Print",
+ExpressionUUID -> "ced91dcd-62ea-43eb-bf44-bf3347e2acc7"]},Open],ExpressionUUID -> "113a40f6-8862-4859-8dc1-fa0f61ff5221"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{RowBox[{"Gaussian","[",RowBox[{"0",",","1"}],"]"}],";"}],"\n",RowBox[
+{RowBox[{RowBox[{"f","[","x_","]"}],":=",RowBox[{"1","/",RowBox[{"(",RowBox[{"1","+",RowBox[
+{"x","^","2"}]}],")"}]}]}],";"}]}],"Input",CellLabel -> "In[55]:= ",ExpressionUUID -> "b6c40c0e-7da7-42dc-8844-61febf92116d"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Answer = \"","\[InvisibleSpace]","0.7868852459016393`"}],
+SequenceForm["Answer = ",0.7868852459016393`],Editable -> False],StandardForm],"Print",
+ExpressionUUID -> "117cef14-6f36-412b-b26a-738fefd40ab9"]},Open],ExpressionUUID -> "7686a90f-553f-4a29-b45a-07d82a39625f"]},
+StyleDefinitions -> "Default.nb",FrontEndVersion -> "13. for Wolfram Cloud 1.61.2.3 (February 12, 2022)"]

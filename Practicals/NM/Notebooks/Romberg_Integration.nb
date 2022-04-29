@@ -1,0 +1,53 @@
+Notebook[{Cell[
+CellGroupData[{Cell[
+BoxData[{RowBox[{"ClearAll",";"}],"\n",RowBox[
+{RowBox[{RowBox[{"Romberg","[",RowBox[{"a0_",",","b0_",",","n_"}],"]"}],":=","\n","  ",RowBox[
+{"Module","[",RowBox[{RowBox[{"{",RowBox[{RowBox[{"a","=",RowBox[{"N","[","a0","]"}]}],",",RowBox[
+{"b","=",RowBox[{"N","[","b0","]"}]}],",","h",",","I"}],"}"}],",","\n","\[NonBreakingSpace]\[NonBreakingSpace]",RowBox[
+{RowBox[{"h","=",RowBox[{RowBox[{"(",RowBox[{"b","-","a"}],")"}],"/","n"}]}],";","\n","\[NonBreakingSpace]\[NonBreakingSpace]",RowBox[
+{"I","=",RowBox[{RowBox[{"(",RowBox[{"h","/","2"}],")"}],"*",RowBox[{"(",RowBox[{RowBox[
+{"f","[","a","]"}],"+",RowBox[{"f","[","b","]"}],"+",RowBox[{"2","*",RowBox[{"(",RowBox[
+{"Sum","[",RowBox[{RowBox[{"f","[",RowBox[{"a","+",RowBox[{"h","*","k"}]}],"]"}],",",RowBox[
+{"{",RowBox[{"k",",","1",",",RowBox[{"n","-","1"}]}],"}"}]}],"]"}],")"}]}]}],")"}]}]}],";","\n","\[NonBreakingSpace]\[NonBreakingSpace]",RowBox[
+{"Return","[","I","]"}],";"}]}],"\n","\[NonBreakingSpace]\[NonBreakingSpace]","]"}]}],";"}],"\n",RowBox[
+{"\[NonBreakingSpace]",RowBox[{RowBox[{RowBox[{"f","[","x_","]"}],":=",RowBox[{"1","/",RowBox[
+{RowBox[{"(",RowBox[{RowBox[{"x","^","3"}],"+","1"}],")"}],"^","0.5"}]}]}],";"}]}],"\n",RowBox[
+{RowBox[{"T1"," ","="," ",RowBox[{"Romberg","[",RowBox[{"0",",","3",",","1"}],"]"}]}],";"}],"\n",RowBox[
+{RowBox[{"T2"," ","="," ",RowBox[{"Romberg","[",RowBox[{"0",",","3",",","2"}],"]"}]}],";"}],"\n",RowBox[
+{RowBox[{"Print","[",RowBox[{"\"T1 = \"",",","T1"}],"]"}],";"}],"\n",RowBox[{RowBox[
+{"Print","[",RowBox[{"\"T2 = \"",",","T2"}],"]"}],";"}],"\n",RowBox[{RowBox[{"T","=",RowBox[
+{RowBox[{"(",RowBox[{RowBox[{"4","*","T2"}],"-","T1"}],")"}],"/","3"}]}],";"}],"\n",RowBox[
+{RowBox[{RowBox[{"Print","[",RowBox[{"\"Answer is = \"",",","T"}],"]"}],";"}],"\n"}]}],
+"Input",CellLabel -> "In[26]:= ",ExpressionUUID -> "af6bb59d-cdab-4220-82b6-ba652c6173ad"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"T1 = \"","\[InvisibleSpace]","1.7834733547569206`"}],
+SequenceForm["T1 = ",1.7834733547569206`],Editable -> False],StandardForm],"Print",
+ExpressionUUID -> "70aa1bb8-1af9-4920-a2cd-a5a2768f8c86"],Cell[
+BoxData[InterpretationBox[
+RowBox[{"\"T2 = \"","\[InvisibleSpace]","1.6088738429790963`"}],SequenceForm["T2 = ",
+1.6088738429790963`],Editable -> False],StandardForm],"Print",ExpressionUUID -> "30c24bde-b9c9-4cbc-a0a0-bcbbda345b12"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Answer is = \"","\[InvisibleSpace]","1.5506740057198214`"}],
+SequenceForm["Answer is = ",1.5506740057198214`],Editable -> False],StandardForm],
+"Print",ExpressionUUID -> "76164003-4335-4d25-8bb0-ff633259cc26"]},Open],ExpressionUUID -> "8e83e200-0709-4ce4-be3c-1054d33a6e10"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{"\[NonBreakingSpace]",RowBox[{RowBox[{RowBox[{"f","[","x_","]"}],":=",RowBox[
+{"2","^","x"}]}],";"}]}],"\n",RowBox[{RowBox[{"T1"," ","="," ",RowBox[{"Romberg","[",RowBox[
+{"0",",","4",",","1"}],"]"}]}],";"}],"\n",RowBox[{RowBox[{"T2"," ","="," ",RowBox[
+{"Romberg","[",RowBox[{"0",",","4",",","2"}],"]"}]}],";"}],"\n",RowBox[{RowBox[{"Print","[",RowBox[
+{"\"T1 = \"",",","T1"}],"]"}],";"}],"\n",RowBox[{RowBox[{"Print","[",RowBox[{"\"T2 = \"",",","T2"}],"]"}],";"}],"\n",RowBox[
+{RowBox[{"T","=",RowBox[{RowBox[{"(",RowBox[{RowBox[{"4","*","T2"}],"-","T1"}],")"}],"/","3"}]}],";"}],"\n",RowBox[
+{RowBox[{"Print","[",RowBox[{"\"Answer is = \"",",","T"}],"]"}],";"}]}],"Input",CellLabel -> "In[35]:= ",
+ExpressionUUID -> "adc6e3a3-e440-4eeb-a9ae-9517ac24b377"],Cell[
+BoxData[InterpretationBox[
+RowBox[{"\"T1 = \"","\[InvisibleSpace]","34.`"}],SequenceForm["T1 = ",34.`],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "e6ac37c5-f470-4fd2-9031-f997c0287e53"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"T2 = \"","\[InvisibleSpace]","25.`"}],SequenceForm["T2 = ",
+25.`],Editable -> False],StandardForm],"Print",ExpressionUUID -> "fc019901-c8b6-48e1-995d-8a05cb38f5cc"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Answer is = \"","\[InvisibleSpace]","22.`"}],SequenceForm[
+"Answer is = ",22.`],Editable -> False],StandardForm],"Print",ExpressionUUID -> "6a34ecee-39ae-4a99-910f-aadcaa7027e7"]},
+Open],ExpressionUUID -> "f8029856-ace3-478b-845e-128c3cab5dc9"]},StyleDefinitions -> "Default.nb",
+FrontEndVersion -> "13. for Wolfram Cloud 1.61.2.3 (February 12, 2022)"]

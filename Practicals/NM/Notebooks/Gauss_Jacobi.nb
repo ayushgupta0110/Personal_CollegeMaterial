@@ -1,0 +1,71 @@
+Notebook[{Cell[
+CellGroupData[{Cell[
+BoxData[{RowBox[{"GaussJacobi[Ao_,bo_,Xo_,maxiter_]:=\n Module[{A=N[Ao],b=N[bo],xk=Xo,xk1,i,j,k=0,\n\[NonBreakingSpace]n,m,OutputDetails},\n\[NonBreakingSpace]Size=Dimensions[A];\n\[NonBreakingSpace]n=Size[[1]];\n\[NonBreakingSpace]m=Size[[2]];\n\[NonBreakingSpace]If[n\[NotEqual]m,Print[\n\[NonBreakingSpace]\"not a square matrix, can not Proceed with Gauss Jacobi method\"]; Return[]];\n\[NonBreakingSpace]OutputDetails={xk};\n\[NonBreakingSpace]xk1=Table[0,{n}];\n\[NonBreakingSpace]While[k<maxiter,\n\[NonBreakingSpace]For[i=1,i\[LessEqual]n,i++,\n\[NonBreakingSpace]xk1[[i]] = \n\[NonBreakingSpace]  1/A[[i,i]](b[[i]]-Sum[(A[[i,j]]*xk[[j]]),{j,1,i-1}]- Sum[(A[[i,j]]*xk[[j]]),{j,i+1,n}]); ];\n\[NonBreakingSpace]k++;\n\[NonBreakingSpace]OutputDetails = Append[OutputDetails,xk1];\n\[NonBreakingSpace]xk=xk1;];\ncolHeading = Table[X[k],{k,1,n}];\nPrint[\nNumberForm[TableForm[OutputDetails,TableHeadings\[Rule]{None,colHeading}],6]];\nPrint[\"Number of iterations Performed\",maxiter];];"}],"\n",RowBox[
+{"A={{5,1,2},{-3,9,4},{1,2,-7}};"}],"\n",RowBox[{"b={10,-14,-33};"}],"\n",RowBox[
+{"Xo={0,0,0};"}],"\n",RowBox[{"GaussJacobi[A,b,Xo,15];"}]}],"Input",CellLabel -> "In[1]:= ",
+ExpressionUUID -> "c5e6cf4c-9ce4-48ce-b41c-2bdd46110d0a"],Cell[
+BoxData[TagBox[TagBox[
+TagBox[GridBox[{{TagBox[RowBox[{"X","[",InterpretationBox[StyleBox["\"1\"",ShowStringCharacters -> False],
+1,Editable -> False],"]"}],HoldForm],TagBox[RowBox[{"X","[",InterpretationBox[StyleBox[
+"\"2\"",ShowStringCharacters -> False],2,Editable -> False],"]"}],HoldForm],TagBox[
+RowBox[{"X","[",InterpretationBox[StyleBox["\"3\"",ShowStringCharacters -> False],
+3,Editable -> False],"]"}],HoldForm]},{InterpretationBox[StyleBox["\"0\"",ShowStringCharacters -> False],
+0,Editable -> False],InterpretationBox[StyleBox["\"0\"",ShowStringCharacters -> False],
+0,Editable -> False],InterpretationBox[StyleBox["\"0\"",ShowStringCharacters -> False],
+0,Editable -> False]},{InterpretationBox[StyleBox["\"2.\"",ShowStringCharacters -> False],
+2.`,AutoDelete -> True],InterpretationBox[StyleBox["\"-1.55556\"",ShowStringCharacters -> False],
+-1.5555555555555554`,AutoDelete -> True],InterpretationBox[StyleBox["\"4.71429\"",
+ShowStringCharacters -> False],4.714285714285714`,AutoDelete -> True]},{InterpretationBox[
+StyleBox["\"0.425397\"",ShowStringCharacters -> False],0.42539682539682533`,AutoDelete -> True],InterpretationBox[
+StyleBox["\"-2.98413\"",ShowStringCharacters -> False],-2.984126984126984`,AutoDelete -> True],InterpretationBox[
+StyleBox["\"4.55556\"",ShowStringCharacters -> False],4.555555555555555`,AutoDelete -> True]},{InterpretationBox[
+StyleBox["\"0.774603\"",ShowStringCharacters -> False],0.7746031746031747`,AutoDelete -> True],InterpretationBox[
+StyleBox["\"-3.43845\"",ShowStringCharacters -> False],-3.438447971781305`,AutoDelete -> True],InterpretationBox[
+StyleBox["\"3.92245\"",ShowStringCharacters -> False],3.9224489795918362`,AutoDelete -> True]},{InterpretationBox[
+StyleBox["\"1.11871\"",ShowStringCharacters -> False],1.1187100025195265`,AutoDelete -> True],InterpretationBox[
+StyleBox["\"-3.04067\"",ShowStringCharacters -> False],-3.040665154950869`,AutoDelete -> True],InterpretationBox[
+StyleBox["\"3.84253\"",ShowStringCharacters -> False],3.842529604434366`,AutoDelete -> True]},{InterpretationBox[
+StyleBox["\"1.07112\"",ShowStringCharacters -> False],1.0711211892164276`,AutoDelete -> True],InterpretationBox[
+StyleBox["\"-2.89044\"",ShowStringCharacters -> False],-2.8904431566865423`,AutoDelete -> True],InterpretationBox[
+StyleBox["\"4.00534\"",ShowStringCharacters -> False],4.005339956088256`,AutoDelete -> True]},{InterpretationBox[
+StyleBox["\"0.975953\"",ShowStringCharacters -> False],0.9759526489020062`,AutoDelete -> True],InterpretationBox[
+StyleBox["\"-2.97867\"",ShowStringCharacters -> False],-2.9786662507448596`,AutoDelete -> True],InterpretationBox[
+StyleBox["\"4.04146\"",ShowStringCharacters -> False],4.041462125120478`,AutoDelete -> True]},{InterpretationBox[
+StyleBox["\"0.979148\"",ShowStringCharacters -> False],0.979148400100781`,AutoDelete -> True],InterpretationBox[
+StyleBox["\"-3.02644\"",ShowStringCharacters -> False],-3.026443394863988`,AutoDelete -> True],InterpretationBox[
+StyleBox["\"4.00266\"",ShowStringCharacters -> False],4.002660021058897`,AutoDelete -> True]},{InterpretationBox[
+StyleBox["\"1.00422\"",ShowStringCharacters -> False],1.0042246705492388`,AutoDelete -> True],InterpretationBox[
+StyleBox["\"-3.00813\"",ShowStringCharacters -> False],-3.0081327648814717`,AutoDelete -> True],InterpretationBox[
+StyleBox["\"3.98947\"",ShowStringCharacters -> False],3.989465944338972`,AutoDelete -> True]},{InterpretationBox[
+StyleBox["\"1.00584\"",ShowStringCharacters -> False],1.0058401752407056`,AutoDelete -> True],InterpretationBox[
+StyleBox["\"-2.99391\"",ShowStringCharacters -> False],-2.9939099739675745`,AutoDelete -> True],InterpretationBox[
+StyleBox["\"3.99828\"",ShowStringCharacters -> False],3.9982798772551846`,AutoDelete -> True]},{InterpretationBox[
+StyleBox["\"0.99947\"",ShowStringCharacters -> False],0.9994700438914411`,AutoDelete -> True],InterpretationBox[
+StyleBox["\"-2.99729\"",ShowStringCharacters -> False],-2.9972887759220694`,AutoDelete -> True],InterpretationBox[
+StyleBox["\"4.00257\"",ShowStringCharacters -> False],4.002574318186507`,AutoDelete -> True]},{InterpretationBox[
+StyleBox["\"0.998428\"",ShowStringCharacters -> False],0.9984280279098109`,AutoDelete -> True],InterpretationBox[
+StyleBox["\"-3.00132\"",ShowStringCharacters -> False],-3.0013207934524115`,AutoDelete -> True],InterpretationBox[
+StyleBox["\"4.0007\"",ShowStringCharacters -> False],4.000698927435329`,AutoDelete -> True]},{InterpretationBox[
+StyleBox["\"0.999985\"",ShowStringCharacters -> False],0.9999845877163506`,AutoDelete -> True],InterpretationBox[
+StyleBox["\"-3.00083\"",ShowStringCharacters -> False],-3.0008346251124314`,AutoDelete -> True],InterpretationBox[
+StyleBox["\"3.9994\"",ShowStringCharacters -> False],3.9993980630007124`,AutoDelete -> True]},{InterpretationBox[
+StyleBox["\"1.00041\"",ShowStringCharacters -> False],1.0004076998222013`,AutoDelete -> True],InterpretationBox[
+StyleBox["\"-2.99974\"",ShowStringCharacters -> False],-2.999737609872644`,AutoDelete -> True],InterpretationBox[
+StyleBox["\"3.99976\"",ShowStringCharacters -> False],3.999759333927355`,AutoDelete -> True]},{InterpretationBox[
+StyleBox["\"1.00004\"",ShowStringCharacters -> False],1.0000437884035869`,AutoDelete -> True],InterpretationBox[
+StyleBox["\"-2.99976\"",ShowStringCharacters -> False],-2.9997571373603127`,AutoDelete -> True],InterpretationBox[
+StyleBox["\"4.00013\"",ShowStringCharacters -> False],4.000133211439558`,AutoDelete -> True]},{InterpretationBox[
+StyleBox["\"0.999898\"",ShowStringCharacters -> False],0.9998981428962392`,AutoDelete -> True],InterpretationBox[
+StyleBox["\"-3.00004\"",ShowStringCharacters -> False],-3.000044608949719`,AutoDelete -> True],InterpretationBox[
+StyleBox["\"4.00008\"",ShowStringCharacters -> False],4.000075644811852`,AutoDelete -> True]}},
+RowSpacings -> 1,ColumnSpacings -> 3,RowAlignments -> Baseline,ColumnAlignments -> Left,
+GridBoxDividers -> {"Columns" -> {{False}},"Rows" -> {False,True,{False},False}},
+ColumnAlignments -> Left],{None,OutputFormsDump`HeadedColumns}],Function[BoxForm`e$,
+TableForm[BoxForm`e$,TableHeadings -> {None,{X[1],X[2],X[3]}}]]],Function[NumberForm[
+Slot[1],6]]],StandardForm],"Print",ExpressionUUID -> "11a58b7e-650f-488f-bc84-6dc7a2901340"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Number of iterations Performed\"","\[InvisibleSpace]","15"}],
+SequenceForm["Number of iterations Performed",15],Editable -> False],StandardForm],
+"Print",ExpressionUUID -> "62a6501e-e027-4994-96e7-5c1a2985cf2b"]},Open],ExpressionUUID -> "3a957e50-5bb4-4fe3-82d9-d59242c55ec8"]},
+StyleDefinitions -> "Default.nb",FrontEndVersion -> "13. for Wolfram Cloud 1.61.2.3 (February 12, 2022)",
+Magnification -> 1.25`]
